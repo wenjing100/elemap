@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <canvas id="mycanvas"></canvas>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
+<script lang='ts'>
+import { defineComponent, onMounted } from "vue";
 export default defineComponent({
-  name: 'Home',
-  components: {
-    HelloWorld,
+  name: "home",
+  setup() {
+    let HEIGHT = 500;
+    let WIDTH = 500;
+    //在onMounted中初始化
+    onMounted(()=>{
+      //@ts-ignore
+      let mycanvas:HTMLCanvasElement = document.getElementById('mycanvas');
+      let ctx = mycanvas.getContext('2d');
+      mycanvas.width = HEIGHT;
+      mycanvas.height = WIDTH;
+    });
   },
 });
 </script>
+
+<style lang='scss' scoped>
+#mycanvas{
+  box-shadow: 0 0 10px gray;
+}
+</style>
