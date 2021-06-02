@@ -1,5 +1,5 @@
 
-import { ILineTypeOne, ILineTypeTwo } from '../mainInterface';
+import { ILineTypeOne, ILineTypeTwo } from '../main_Interface';
 
 //根据起点坐标、方向、长度画线-----返回一个终点坐标对象
 function drawLineTypeOne(loadone:ILineTypeOne) {

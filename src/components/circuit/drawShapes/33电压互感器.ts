@@ -1,6 +1,6 @@
 
 import { BASE_SIZE } from '../../../config/shape&layout';
-import { IeEnter } from '../mainInterface';
+import { IeEnter } from '../main_Interface';
 /* 
 上接线长度：2.5 base
 */

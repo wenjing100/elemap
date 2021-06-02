@@ -1,57 +1,44 @@
 
 
-import { BASE_SIZE } from '../../../config/shape&layout';
-import { IeEnter } from '../mainInterface';
-
+import { shap_scale } from '@/config/shape&layout';
+import { line_width } from '@/config/shape&layout'
+import { ImainBase } from '../main_Interface';
+import { drawLineTypeOne } from '../baseMethods/drawLine';
 /* 
-两边线段长 3 base
+  名称：电源接入点
+  比例: middle
+  外接点也是圆的输入点
 */
-//s-圆
-function EleEnter(pload: IeEnter) {
+const scale = shap_scale.middle;
+const a = line_width();
+
+function EleEnter(pload: ImainBase) {
   this.x = pload.x;
   this.y = pload.y;
-  this.r = BASE_SIZE;
+  this.r = scale/2;
+  this.lineLength = scale*1.5;
   this.color = pload.color;
+  this.lineWdth = a.light;
   this.ctx = pload.ctx;
-  this.direction = pload.direction ?pload.direction: 0;
-  this.o1 = {};
-  this.o2 = {};
 }
 
 EleEnter.prototype.draw = function (){
-
+  const x0 = this.x;
+  const y0 = this.y + this.r;
+  const x1 = this.x - this.r;
+  const y1 = y0
+  const x2 = this.x + this.r;
+  const y2 = y0;
   this.ctx.beginPath();
-  this.ctx.strokeStyle = this.color;
-  this.ctx.arc(this.x,this.y,this.r,0,Math.PI*2,false);
- 
-  this.ctx.moveTo(this.x - this.r,this.y);
-  this.ctx.lineTo(this.x - this.r*4,this.y);
-  this.o1.x = this.x - this.r*4;
-  this.o1.y = this.y;
-
-  this.ctx.moveTo(this.x + this.r,this.y);
-  this.ctx.lineTo(this.x + this.r*4,this.y);
-  this.o2.x = this.x + this.r*4;
-  this.o2.y = this.y;
+  this.ctx.lineWidth = this.lineWdth;
+  //画圆
+  this.ctx.arc(x0,y0,this.r,0,Math.PI*2);
   this.ctx.stroke();
-   //旋转*********************************
-   if(this.direction){
-    this.ctx.save();
-    const deg = 45;
-    this.ctx.rotate(Math.PI/4);
-    this.ctx.restore();
-  }
+  //画线
+  drawLineTypeOne({x:x1,y:y1,ctx:this.ctx,lineD:'l',long:this.lineLength});
+  drawLineTypeOne({x:x2,y:y2,ctx:this.ctx,lineD:'r',long:this.lineLength});
 }
 
-EleEnter.prototype.rotate = function () {
-  this.ctx.save();
-  const deg = 45;
-  this.ctx.rotate(deg);
-  this.ctx.restore();
-}
-EleEnter.prototype.output = {
-  o1:{}
-}
 export {
   EleEnter
 } 

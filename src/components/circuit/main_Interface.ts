@@ -1,10 +1,16 @@
-//元器件接口   元件id：1、33
-interface IeEnter {
+
+interface ImainBase{
   x: number;
   y: number;
   color: string;
   ctx: CanvasRenderingContext2D;
-  direction?:string // lr 左右翻转   tb 上下翻转
+}
+
+
+//元器件接口   元件id：1、33
+interface IeEnter extends ImainBase{
+  
+  
 }
 
 //画线接口---第一种  根据起点坐标和长度画线
@@ -29,6 +35,7 @@ interface ILineTypeTwo{
 }
 
 export {
+  ImainBase,
   IeEnter,
   ILineTypeOne,
   ILineTypeTwo

@@ -5,7 +5,7 @@
 <script lang='ts'>
 import { defineComponent, nextTick, ref} from "vue";
 import { canvasMap } from '../../config/shape&layout';
-// import {  } from './baseMethods/baseShapes';
+import { EleEnter } from './drawShapes/1电源接入点';
 
 export default defineComponent({
   name: "circuit",
@@ -19,8 +19,9 @@ export default defineComponent({
       let ctx = mycanvas.value.getContext('2d');
       mycanvas.value.width = canvasMap.MAP_WIDTH;
       mycanvas.value.height = canvasMap.MAP_HEIGHT;
-      // drawFillArrowDown({x:X,y:Y,len:100,color:COLOR,ctx,deg:Math.PI/6});
-
+      
+      let ball = new EleEnter({x:X,y:Y,color:COLOR,ctx})
+      ball.draw();
     })
       
     return {
@@ -33,5 +34,6 @@ export default defineComponent({
 <style lang='scss' scoped>
 #mycanvas{
   box-shadow: 0 0 10px gray;
+  /* color:#fff; */
 }
 </style>
