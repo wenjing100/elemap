@@ -5,7 +5,7 @@
 <script lang='ts'>
 import { defineComponent, nextTick, ref} from "vue";
 import { canvasMap } from '../../config/shape&layout';
-import { EleEnter } from './drawShapes/1电源接入点';
+import { HighV_mainLine } from './drawShapes/6高压母线';
 
 export default defineComponent({
   name: "circuit",
@@ -20,7 +20,7 @@ export default defineComponent({
       mycanvas.value.width = canvasMap.MAP_WIDTH;
       mycanvas.value.height = canvasMap.MAP_HEIGHT;
       
-      let ball = new EleEnter({x:X,y:Y,color:COLOR,ctx})
+      let ball = new HighV_mainLine({x:X,y:Y,color:COLOR,ctx,direction:'d'})
       ball.draw();
     })
       
