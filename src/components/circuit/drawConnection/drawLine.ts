@@ -25,7 +25,7 @@ function drawLineTypeOne(loadone:ILineTypeOne) {
   }
   loadone.ctx.beginPath();
   //判断线的类型
-  if(loadone.lineStyle == 'dashed'){
+  if(loadone.lineStyle || loadone.lineStyle == 'dashed'){
     loadone.ctx.setLineDash([2,2]);
   }
   if(loadone.color){
@@ -44,7 +44,7 @@ function drawLineTypeTwo(loadtow:ILineTypeTwo) {
   loadtow.ctx.beginPath();
   loadtow.ctx.moveTo(loadtow.x1,loadtow.y1);
   loadtow.ctx.lineTo(loadtow.x2,loadtow.y2);
-  if(loadtow.lineStyle == 'dashed'){
+  if(loadtow.lineStyle || loadtow.lineStyle == 'dashed'){
     loadtow.ctx.setLineDash([2,2]);
   }
   if(loadtow.color){

@@ -11,7 +11,7 @@ interface IeEnter {
 interface ILineTypeOne{
   x:number;
   y:number;
-  lineStyle:string;//线段类型----->以后改为枚举：虚线dashed 实线normal
+  lineStyle?:string;//线段类型----->以后改为枚举：虚线dashed 实线normal
   lineD:string;// l 左   r 右   t 上   b 下
   long:number;//长度
   ctx:CanvasRenderingContext2D;
@@ -23,7 +23,7 @@ interface ILineTypeTwo{
   y1:number;
   x2:number;
   y2:number
-  lineStyle:string;//线段类型----->以后改为枚举：虚线 实线
+  lineStyle?:string;//线段类型----->以后改为枚举：虚线 实线
   ctx:CanvasRenderingContext2D;
   color?:string
 }
