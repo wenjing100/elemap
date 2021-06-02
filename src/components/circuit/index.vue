@@ -5,7 +5,7 @@
 <script lang='ts'>
 import { defineComponent, nextTick, ref} from "vue";
 import { canvasMap } from '../../config/shape&layout';
-import { drawFork } from './baseMethods/baseShapes';
+// import {  } from './baseMethods/baseShapes';
 
 export default defineComponent({
   name: "circuit",
@@ -19,7 +19,7 @@ export default defineComponent({
       let ctx = mycanvas.value.getContext('2d');
       mycanvas.value.width = canvasMap.MAP_WIDTH;
       mycanvas.value.height = canvasMap.MAP_HEIGHT;
-      drawFork({x:X,y:Y,w:100,color:COLOR,ctx});
+      // drawFillArrowDown({x:X,y:Y,len:100,color:COLOR,ctx,deg:Math.PI/6});
 
     })
       
