@@ -21,7 +21,9 @@ export default defineComponent({
       mycanvas.value.height = canvasMap.MAP_HEIGHT;
       
       let ball = new HighV_mainLine({x:X,y:Y,color:COLOR,ctx,direction:'d'})
+      let ball2 = new HighV_mainLine({x:ball.nextPoint.x,y:ball.nextPoint.y,color:'blue',ctx,direction:'l'});
       ball.draw();
+      ball2.draw();
     })
       
     return {
