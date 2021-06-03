@@ -3,7 +3,7 @@ import { IhighVmainline } from '../main_Interface';
 import { line_width,line_length } from '@/config/shape&layout';
 
 const a = line_width();
-
+//出口 nextPoint
 function HighV_mainLine(pload:IhighVmainline) {
   this.x = pload.x;
   this.y = pload.y;

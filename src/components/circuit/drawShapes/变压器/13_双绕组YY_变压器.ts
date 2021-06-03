@@ -1,21 +1,35 @@
+// id:13  双绕组YY 变压器
 
-import { drawLineGround, drawSparkThree } from '../baseMethods/baseShapes';
+import { drawLineGround, drawSparkThree } from '../../baseMethods/baseShapes';
 import { shap_scale,line_length,line_width } from '@/config/shape&layout';
-import { ImainBase } from '../main_Interface';
+import { IbianYaDouble } from '../../main_Interface';
 import { bd } from '@/utils/utils_drawShap';
+import { drawLineTypeOne } from '../../baseMethods/drawLine';
 
 const a = line_width();
 
-//变压器类型1  从上定点开始绘制，返回值坐标 下出口
-function BianYaThree(pload:ImainBase):void {
+//  从上定点开始绘制
+//  两个出口 nextPointMain nextPointSide
+function BianYaThree(pload:IbianYaDouble):void {
   this.x = pload.x;
   this.y = pload.y;
   this.color = pload.color;
   this.ctx = pload.ctx;
+  this.direction = pload.direction || 'l';//默认  l
 
   this.r = shap_scale.large;
   this.shortline = line_length.line_extra_short;
   this.lineW = a.light;
+
+  this.sideX = this.x - this.r/2;
+  const yy = this.y + 2*this.shortline + this.r*7/4;
+  this.nextPointMain = {x:this.x,y:yy}//主出口
+  this.nextPointSide = {x:this.sideX,y:yy}//零线出口
+
+  if(this.direction == 'r'){
+    this.nextPointSide.x = this.x + this.r/2;
+    this.sideX = this.x + this.r/2;
+  }
 }
 
 BianYaThree.prototype.draw = function () {
@@ -70,6 +84,17 @@ BianYaThree.prototype.draw = function () {
     ctx:this.ctx,
     color:this.color
   });
+
+  //零线出口
+  bd(this.ctx,this.color,this.lineW);
+  drawLineTypeOne({
+    x:this.sideX,
+    y:y2,
+    len:this.r + this.shortline,
+    ctx:this.ctx,
+    color:this.color,
+    lineD:'b'
+  })
 }
 
 

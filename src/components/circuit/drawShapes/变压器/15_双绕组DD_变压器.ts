@@ -1,12 +1,13 @@
-
-import { drawTriangle } from '../baseMethods/baseShapes';
+//id:15 双绕组 DD
+import { drawTriangle } from '../../baseMethods/baseShapes';
 import { shap_scale,line_length,line_width } from '@/config/shape&layout';
-import { ImainBase } from '../main_Interface';
+import { ImainBase } from '../../main_Interface';
 import { bd } from '@/utils/utils_drawShap';
 
 const a = line_width();
 
-//变压器类型1  从上定点开始绘制，返回值坐标 下出口
+//从上定点开始绘制
+//下出口 nextPosition
 function BianYaTwo(pload:ImainBase):void {
   this.x = pload.x;
   this.y = pload.y;
@@ -16,6 +17,7 @@ function BianYaTwo(pload:ImainBase):void {
   this.r = shap_scale.large;
   this.shortline = line_length.line_extra_short;
   this.lineW = a.light;
+  this.nextPosition = {x:this.x,y:this.y + 2*this.shortline + this.r*7/4}
 }
 
 BianYaTwo.prototype.draw = function () {

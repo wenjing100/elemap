@@ -5,7 +5,7 @@
 <script lang='ts'>
 import { defineComponent, nextTick, ref} from "vue";
 import { canvasMap } from '../../config/shape&layout';
-import { BianYaThree } from './drawShapes';
+import { BianYaNigh } from './drawShapes';
 
 
 export default defineComponent({
@@ -21,7 +21,7 @@ export default defineComponent({
       mycanvas.value.width = canvasMap.MAP_WIDTH;
       mycanvas.value.height = canvasMap.MAP_HEIGHT;
 
-      let bianya = new BianYaThree({
+      let bianya = new BianYaNigh({
         x:X,
         y:Y,
         color:COLOR,

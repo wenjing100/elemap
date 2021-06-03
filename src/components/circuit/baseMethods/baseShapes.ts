@@ -1,6 +1,8 @@
 import { Icircle, IdrawFork, IfillArrow, Irect, ISparkThree, ItiltRect } from "./base_Interface";
 import { drawLineTypeOne } from './drawLine';
+import { line_length,line_width } from '@/config/shape&layout';
 
+const aa = line_width();
 //圆
 function drawBasicCircle(pload:Icircle) :void{
   pBegin(pload.ctx,pload.color);
@@ -109,15 +111,24 @@ function drawTiltRect(pload:ItiltRect):void{
 //接地线
 function drawLineGround(pload:ISparkThree):void{
   const x0 = pload.x - pload.len/2;
+  const y0 = pload.y + line_length.line_extra_short;
 
-  const x1 = x0;
-  const x2 = x0 + pload.len/4;
-  const y1 = pload.y + pload.len/2;
-  const y2 = pload.y + pload.len;
+  const x1 = x0 + pload.len/4;
+  const y1 = y0 + pload.len/4;
+  const y2 = y0 + pload.len/2;
   pBegin(pload.ctx,pload.color);
-  drawLineTypeOne({x:x1,y:pload.y,lineD:'r',len:pload.len,ctx:pload.ctx});
-  drawLineTypeOne({x:x2,y:y1,lineD:'r',len:pload.len/2,ctx:pload.ctx});
-  drawLineTypeOne({x:x2,y:y2,lineD:'r',len:pload.len/2,ctx:pload.ctx});
+  drawLineTypeOne({
+    x:pload.x,
+    y:pload.y,
+    color:pload.color,
+    ctx:pload.ctx,
+    len:line_length.line_extra_short,
+    lineD:'b',
+    lineWidth:aa.light
+  })
+  drawLineTypeOne({x:x0,y:y0,lineD:'r',len:pload.len,ctx:pload.ctx});
+  drawLineTypeOne({x:x1,y:y1,lineD:'r',len:pload.len/2,ctx:pload.ctx});
+  drawLineTypeOne({x:x1,y:y2,lineD:'r',len:pload.len/2,ctx:pload.ctx});
 }
 //实心三角箭头  可调整旋转角度
 function drawFillArrow(pload:IfillArrow):void{

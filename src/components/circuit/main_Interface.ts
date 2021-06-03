@@ -9,7 +9,10 @@ interface ImainBase{
 interface IhighVmainline extends ImainBase{
   direction:string;//l 左  r 右 u 上 d 下
 }
-
+//双绕组-接地-变压器 、三绕组-变压器
+interface IbianYaDouble extends ImainBase{
+  direction?:string;// l 左  r 右
+}
 
 //画线接口---第一种  根据起点坐标和长度画线
 interface ILineTypeOne{
@@ -43,4 +46,5 @@ export {
   ILineTypeOne,
   ILineTypeTwo,
   IhighVmainline,
+  IbianYaDouble
 }
