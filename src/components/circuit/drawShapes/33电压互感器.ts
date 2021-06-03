@@ -1,32 +1,40 @@
 
-import { BASE_SIZE } from '../../../config/shape&layout';
-import { IeEnter } from '../main_Interface';
-/* 
-上接线长度：2.5 base
-*/
+import { ImainBase } from "../main_Interface"
+import { line_length, shap_scale, line_width } from '@/config/shape&layout';
+import { bd } from '@/utils/utils_drawShap';
 
-//l-圆 2.5base
-function EleDianYaHuGan(pload: IeEnter) {
+const a = line_width();
+//电压互感器14
+function EleDianYaHuGan(pload: ImainBase) {
   this.x = pload.x;
   this.y = pload.y;
-  this.r = BASE_SIZE * 2.5;
   this.color = pload.color;
   this.ctx = pload.ctx;
-  
+
+  this.r = shap_scale.middle;
+  this.lineLen = line_length.line_extra_short;
+  this.lineW = a.light;
+
 }
 
 EleDianYaHuGan.prototype.draw = function () {
-  this.ctx.beginPath();
-  this.ctx.strokeStyle = this.color;
-  this.ctx.arc(this.x,this.y,this.r,0,Math.PI*2,false);
-  const y2 = this.y + BASE_SIZE*3;
+  const y1 = this.y + this.lineLen + this.r;//第一个圆
+  const y2 = y1 + this.r*3/2;//第二个圆
 
-  this.ctx.moveTo(this.x + this.r,y2);
-  this.ctx.arc(this.x,y2,this.r,0,Math.PI*2,false);
-
-  this.ctx.moveTo(this.x,this.y - this.r);
-  this.ctx.lineTo(this.x,this.y - this.r*2);
+  bd(this.ctx,this.color,this.lineW);
+  this.ctx.moveTo(this.x,this.y);
+  this.ctx.lineTo(this.x,this.y + this.lineLen);
   this.ctx.stroke();
+
+  bd(this.ctx,this.color,this.lineW);
+  this.ctx.arc(this.x,y1,this.r,0,Math.PI*2);
+  this.ctx.stroke();
+  bd(this.ctx,this.color,this.lineW);
+  this.ctx.arc(this.x,y2,this.r,0,Math.PI*2);
+  this.ctx.stroke();
+
 }
 
-export default EleDianYaHuGan
+export {
+  EleDianYaHuGan
+}

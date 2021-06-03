@@ -1,5 +1,5 @@
 
-import { drawSparkThree,drawTriangle } from '../baseMethods/baseShapes';
+import { drawTriangle } from '../baseMethods/baseShapes';
 import { shap_scale,line_length,line_width } from '@/config/shape&layout';
 import { ImainBase } from '../main_Interface';
 import { bd } from '@/utils/utils_drawShap';
@@ -7,7 +7,7 @@ import { bd } from '@/utils/utils_drawShap';
 const a = line_width();
 
 //变压器类型1  从上定点开始绘制，返回值坐标 下出口
-function BianYaOne(pload:ImainBase):void {
+function BianYaTwo(pload:ImainBase):void {
   this.x = pload.x;
   this.y = pload.y;
   this.color = pload.color;
@@ -18,7 +18,7 @@ function BianYaOne(pload:ImainBase):void {
   this.lineW = a.light;
 }
 
-BianYaOne.prototype.draw = function () {
+BianYaTwo.prototype.draw = function () {
 
   const y1 = this.y + this.shortline + this.r;//第一个圆心
   const y2 = y1 + this.r*3/2;//第二个圆心
@@ -34,13 +34,14 @@ BianYaOne.prototype.draw = function () {
   this.ctx.arc(this.x,y1,this.r,0,Math.PI*2);
   this.ctx.stroke();
 
-  drawSparkThree({
-    ctx:this.ctx,
+  drawTriangle({
     x:this.x,
     y:y1,
-    len:this.r/2,
-    color:this.color
+    len:this.r,
+    color:this.color,
+    ctx:this.ctx
   });
+
   //第二个圆
   bd(this.ctx,this.color,this.lineW);
   this.ctx.arc(this.x,y2,this.r,0,Math.PI*2);
@@ -61,5 +62,5 @@ BianYaOne.prototype.draw = function () {
 
 
 export {
-  BianYaOne
+  BianYaTwo
 }

@@ -108,10 +108,12 @@ function drawTiltRect(pload:ItiltRect):void{
 }
 //接地线
 function drawLineGround(pload:ISparkThree):void{
-  const x1 = pload.x;
-  const x2 = pload.x + pload.len/4;
-  const y1 = pload.y + pload.len/4;
-  const y2 = pload.y + pload.len/2;
+  const x0 = pload.x - pload.len/2;
+
+  const x1 = x0;
+  const x2 = x0 + pload.len/4;
+  const y1 = pload.y + pload.len/2;
+  const y2 = pload.y + pload.len;
   pBegin(pload.ctx,pload.color);
   drawLineTypeOne({x:x1,y:pload.y,lineD:'r',len:pload.len,ctx:pload.ctx});
   drawLineTypeOne({x:x2,y:y1,lineD:'r',len:pload.len/2,ctx:pload.ctx});
