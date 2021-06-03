@@ -5,7 +5,8 @@
 <script lang='ts'>
 import { defineComponent, nextTick, ref} from "vue";
 import { canvasMap } from '../../config/shape&layout';
-import { HighV_mainLine } from './drawShapes/6高压母线';
+import { BianYaOne } from './drawShapes';
+
 
 export default defineComponent({
   name: "circuit",
@@ -19,11 +20,14 @@ export default defineComponent({
       let ctx = mycanvas.value.getContext('2d');
       mycanvas.value.width = canvasMap.MAP_WIDTH;
       mycanvas.value.height = canvasMap.MAP_HEIGHT;
-      
-      let ball = new HighV_mainLine({x:X,y:Y,color:COLOR,ctx,direction:'d'})
-      let ball2 = new HighV_mainLine({x:ball.nextPoint.x,y:ball.nextPoint.y,color:'blue',ctx,direction:'l'});
-      ball.draw();
-      ball2.draw();
+
+      let bianya = new BianYaOne({
+        x:X,
+        y:Y,
+        color:COLOR,
+        ctx
+      });
+      bianya.draw();
     })
       
     return {

@@ -56,7 +56,7 @@ function drawOpenLine(pload:ISparkThree):void{
 
   pload.ctx.restore();
 }
-//三角形  输入底线的中点坐标
+//三角形  输入底线的中点坐标 和边长
 function drawTriangle(pload:ISparkThree):void{
   const l = (Math.sqrt(3)/2)*pload.len;
   const x1 = pload.x - pload.len/2;
@@ -113,9 +113,9 @@ function drawLineGround(pload:ISparkThree):void{
   const y1 = pload.y + pload.len/4;
   const y2 = pload.y + pload.len/2;
   pBegin(pload.ctx,pload.color);
-  drawLineTypeOne({x:x1,y:pload.y,lineD:'r',long:pload.len,ctx:pload.ctx});
-  drawLineTypeOne({x:x2,y:y1,lineD:'r',long:pload.len/2,ctx:pload.ctx});
-  drawLineTypeOne({x:x2,y:y2,lineD:'r',long:pload.len/2,ctx:pload.ctx});
+  drawLineTypeOne({x:x1,y:pload.y,lineD:'r',len:pload.len,ctx:pload.ctx});
+  drawLineTypeOne({x:x2,y:y1,lineD:'r',len:pload.len/2,ctx:pload.ctx});
+  drawLineTypeOne({x:x2,y:y2,lineD:'r',len:pload.len/2,ctx:pload.ctx});
 }
 //实心三角箭头  可调整旋转角度
 function drawFillArrow(pload:IfillArrow):void{
@@ -136,6 +136,10 @@ function drawFillArrow(pload:IfillArrow):void{
   pload.ctx.fill();
   pload.ctx.restore();
 }
+//双子交叠圆 
+// function drawDoubleCircle():void{
+
+// }
 
 //******工具********
 function pBegin(ctx:CanvasRenderingContext2D,color:string){
@@ -184,5 +188,6 @@ export {
   drawDoubleSide,
   drawTiltRect,
   drawLineGround,
-  drawFillArrow
+  drawFillArrow,
+  // drawDoubleCircle
 }

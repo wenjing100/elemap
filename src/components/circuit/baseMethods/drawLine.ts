@@ -7,20 +7,20 @@ function drawLineTypeOne(loadone:ILineTypeOne) {
   let y1 = null;
   switch(loadone.lineD){
     case 'l':
-      x1 = loadone.x - loadone.long;
+      x1 = loadone.x - loadone.len;
       y1 = loadone.y;
       break;
     case 'r':
-      x1 = loadone.x + loadone.long;
+      x1 = loadone.x + loadone.len;
       y1 = loadone.y;
       break;
     case 't':
       x1 = loadone.x;
-      y1 = loadone.y - loadone.long;
+      y1 = loadone.y - loadone.len;
       break;
     case 'b':
       x1 = loadone.x;
-      y1 = loadone.y + loadone.long;
+      y1 = loadone.y + loadone.len;
       break;
   }
   loadone.ctx.beginPath();
@@ -28,8 +28,14 @@ function drawLineTypeOne(loadone:ILineTypeOne) {
   if(loadone.lineStyle || loadone.lineStyle == 'dashed'){
     loadone.ctx.setLineDash([2,2]);
   }
+  if(loadone.lineCap || loadone.lineCap == 'round'){
+    loadone.ctx.lineCap = 'round';
+  }
   if(loadone.color){
     loadone.ctx.strokeStyle = loadone.color;
+  }
+  if(loadone.lineWidth){
+    loadone.ctx.lineWidth = loadone.lineWidth;
   }
   loadone.ctx.moveTo(loadone.x,loadone.y);
   loadone.ctx.lineTo(x1,y1);
@@ -47,8 +53,14 @@ function drawLineTypeTwo(loadtow:ILineTypeTwo) {
   if(loadtow.lineStyle || loadtow.lineStyle == 'dashed'){
     loadtow.ctx.setLineDash([2,2]);
   }
+  if(loadtow.lineCap || loadtow.lineCap == 'round'){
+    loadtow.ctx.lineCap = 'round';
+  }
   if(loadtow.color){
     loadtow.ctx.strokeStyle = loadtow.color;
+  }
+  if(loadtow.lineWidth){
+    loadtow.ctx.lineWidth = loadtow.lineWidth;
   }
   loadtow.ctx.stroke();
 }

@@ -28,6 +28,10 @@ interface ItiltRect extends IbaseShap{
 interface IfillArrow extends ISparkThree{
   deg:number;
 }
+
+interface IdrawDoubleCircle extends IbaseShap{
+  r:number;
+}
 export {
   Icircle,
   Irect,

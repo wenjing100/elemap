@@ -1,7 +1,6 @@
 
 
-import { shap_scale } from '@/config/shape&layout';
-import { line_width } from '@/config/shape&layout'
+import { shap_scale,line_width } from '@/config/shape&layout';
 import { ImainBase } from '../main_Interface';
 import { drawLineTypeOne } from '../baseMethods/drawLine';
 /* 
@@ -12,7 +11,7 @@ import { drawLineTypeOne } from '../baseMethods/drawLine';
 const scale = shap_scale.middle;
 const a = line_width();
 
-function EleEnter(pload: ImainBase) {
+function EleEnter(pload: ImainBase):void {
   this.x = pload.x;
   this.y = pload.y;
   this.r = scale/2;
@@ -20,6 +19,7 @@ function EleEnter(pload: ImainBase) {
   this.color = pload.color;
   this.lineWdth = a.light;
   this.ctx = pload.ctx;
+  this.nextPoint = {x:this.x,y:this.y}
 }
 
 EleEnter.prototype.draw = function (){
@@ -35,8 +35,8 @@ EleEnter.prototype.draw = function (){
   this.ctx.arc(x0,y0,this.r,0,Math.PI*2);
   this.ctx.stroke();
   //画线
-  drawLineTypeOne({x:x1,y:y1,ctx:this.ctx,lineD:'l',long:this.lineLength});
-  drawLineTypeOne({x:x2,y:y2,ctx:this.ctx,lineD:'r',long:this.lineLength});
+  drawLineTypeOne({x:x1,y:y1,ctx:this.ctx,lineD:'l',len:this.lineLength});
+  drawLineTypeOne({x:x2,y:y2,ctx:this.ctx,lineD:'r',len:this.lineLength});
 }
 
 export {

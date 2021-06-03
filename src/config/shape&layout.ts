@@ -1,5 +1,7 @@
 
-//画布宽高  A3纸对应像素----->4200*2070
+//画布宽
+//高最大值-----A3纸对应像素----->4200*2070
+//高最小值-----？* ？
 const w = 4200;
 const h = 2070;
 export const canvasMap = {
@@ -7,8 +9,15 @@ export const canvasMap = {
   MAP_HEIGHT: h,
   MAP_PADDING: w/16
 }
-
+//基准值----画布缩放时候修改 基准值
 export const BASE_SIZE = canvasMap.MAP_WIDTH / 200;
+
+// 绘图起始点
+export const beginningPoint = {
+  X: canvasMap.MAP_PADDING,
+  Y: canvasMap.MAP_HEIGHT - 4*BASE_SIZE
+}
+
 
 
 //图形大小基准值
@@ -20,9 +29,9 @@ export const shap_scale = {
 }
 
 interface IlinewFn{
-  light:number;
-  normal:number;
-  bold:number;
+  light: number;
+  normal: number;
+  bold: number;
 }
 //线粗细基准值 根据画布大小调整
 export function line_width() :IlinewFn {
@@ -38,15 +47,17 @@ export function line_width() :IlinewFn {
   }
   const normal = light*1.5;
   const bold = light*2;
-  return {light,normal,bold}
+  return { light, normal, bold }
 }
 
 //线的长度
 export const line_length = {
-  line_between_cabinet:4*BASE_SIZE,//柜子间
-  line_self:2*BASE_SIZE,//线本身默认长
-  line_between_cells:1.5*BASE_SIZE,//不同元件间
-  line_between_nom_abnom:8*BASE_SIZE//normal和abnormal间距离
+  line_between_cabinet: 4*BASE_SIZE,//柜子间
+  line_self: 2*BASE_SIZE,//线本身默认长
+  line_between_cells: 1.5*BASE_SIZE,//不同元件间
+  line_between_nom_abnom: 8*BASE_SIZE,//normal和abnormal间距离
+  line_extra_short: BASE_SIZE/2,//元件外接线---短
+  line_extra_long: BASE_SIZE //元件外接线---长
 }
 
 
