@@ -15,7 +15,7 @@ export const BASE_SIZE = canvasMap.MAP_WIDTH / 200;
 // 绘图起始点
 export const beginningPoint = {
   X: canvasMap.MAP_PADDING,
-  Y: canvasMap.MAP_HEIGHT/4 - 2*BASE_SIZE
+  Y: canvasMap.MAP_HEIGHT/2 - 2*BASE_SIZE
 }
 
 
@@ -51,9 +51,9 @@ export function line_width() :IlinewFn {
 
 //线的长度
 export const line_length = {
-  line_between_cabinet: 4*BASE_SIZE,//柜子间
+  line_between_cabinet: 10*BASE_SIZE,//柜子间
   line_self: 2*BASE_SIZE,//线本身默认长
-  line_between_cells: 1.5*BASE_SIZE,//不同元件间
+  line_between_cells: 4*BASE_SIZE,//不同元件间
   line_between_norm_abnorm: 8*BASE_SIZE,//normal和abnormal间距离
   line_extra_short: BASE_SIZE,//元件外接线---短
   line_extra_long: BASE_SIZE*1.5 //元件外接线---长

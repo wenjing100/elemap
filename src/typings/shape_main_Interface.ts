@@ -1,9 +1,10 @@
-// 电源接入点、变压器14
+// 电源接入点
 interface ImainBase{
   x: number;
   y: number;
   color: string;
   ctx: CanvasRenderingContext2D;
+  direction?:string;//u 上  d 下
 }
 //高压母线
 interface IhighVmainline extends ImainBase{

@@ -14,11 +14,11 @@ function drawLineTypeOne(loadone:ILineTypeOne) {
       x1 = loadone.x + loadone.len;
       y1 = loadone.y;
       break;
-    case 't':
+    case 'u':
       x1 = loadone.x;
       y1 = loadone.y - loadone.len;
       break;
-    case 'b':
+    case 'd':
       x1 = loadone.x;
       y1 = loadone.y + loadone.len;
       break;

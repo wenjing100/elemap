@@ -30,7 +30,7 @@ interface INormal{
   number: string
   next?: Array<INormal>;
 }
-//特殊柜子
+//特殊柜子 
 interface Iabn{
   Contex_box: Array<INormal>//联络柜的内容
   NextBid: string;
@@ -43,8 +43,15 @@ interface Iabn{
   PreUuid: string; //前一个连接柜子元器件的uuid
 }
 
+interface IdrawData{
+  Abnormal:[Iabn?];
+  Normal:INormal;
+  Version:string;
+}
+
 export {
   Imaterial,
   INormal,
-  Iabn
+  Iabn,
+  IdrawData
 }

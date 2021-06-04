@@ -14,12 +14,17 @@ const a = line_width();
 function EleEnter(pload: ImainBase):void {
   this.x = pload.x;
   this.y = pload.y;
+  this.color = pload.color;
+  this.ctx = pload.ctx;
+  this.direction = pload.direction?pload.direction:'u';//默认向上
   this.r = scale/2;
   this.lineLength = scale*1.5;
-  this.color = pload.color;
   this.lineWdth = a.light;
-  this.ctx = pload.ctx;
+
   this.nextPoint = {x:this.x,y:this.y}
+  if(this.direction == 'd'){
+    this.nextPoint = {x:this.x,y:this.y+this.r*2};
+  }
 }
 
 EleEnter.prototype.draw = function (){
