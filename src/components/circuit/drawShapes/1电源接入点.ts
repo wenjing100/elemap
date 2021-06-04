@@ -1,7 +1,7 @@
 
 
 import { shap_scale,line_width } from '@/config/shape&layout';
-import { ImainBase } from '../main_Interface';
+import { ImainBase } from '@/typings/main_Interface';
 import { drawLineTypeOne } from '../baseMethods/drawLine';
 /* 
   名称：电源接入点

@@ -1,7 +1,7 @@
 //id:14 双绕组YD_变压器
 import { drawSparkThree,drawTriangle } from '../../baseMethods/baseShapes';
 import { shap_scale,line_length,line_width } from '@/config/shape&layout';
-import { ImainBase } from '../../main_Interface';
+import { ImainBase } from '@/typings/main_Interface';
 import { bd } from '@/utils/utils_drawShap';
 
 const a = line_width();

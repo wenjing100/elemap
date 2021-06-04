@@ -2,7 +2,7 @@
 import { drawSparkThree, drawTriangle, drawLineGround } from '../../baseMethods/baseShapes';
 import { drawLineTypeOne } from '../../baseMethods/drawLine';
 import { shap_scale,line_length,line_width } from '@/config/shape&layout';
-import { IbianYaDouble } from '../../main_Interface';
+import { IbianYaDouble } from '@/typings/main_Interface';
 import { bd } from '@/utils/utils_drawShap';
 
 const a = line_width();

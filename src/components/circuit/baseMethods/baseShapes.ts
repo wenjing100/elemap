@@ -1,4 +1,4 @@
-import { Icircle, IdrawFork, IfillArrow, Irect, ISparkThree, ItiltRect } from "./base_Interface";
+import { Icircle, IdrawFork, IfillArrow, Irect, ISparkThree, ItiltRect } from "@/typings/shapeMethod_Interface";
 import { drawLineTypeOne } from './drawLine';
 import { line_length,line_width } from '@/config/shape&layout';
 
