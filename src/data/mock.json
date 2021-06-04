@@ -1,0 +1,3185 @@
+{
+  "Version": "1.0",
+  "Normal": {
+    "number": "",
+    "bid": "GYGL2007071528050X",
+    "cabinetnumber": "G1",
+    "alias": "G1进线隔离柜",
+    "name": "进线隔离柜",
+    "creat_time": "",
+    "model": "11",
+    "direction": "left",
+    "material": [
+      {
+        "id": "1",
+        "name": "电源接入点",
+        "uuid": "2c3a7835-f578-47ae-b1e5-7e7526fba5c7",
+        "position": 1,
+        "specification": "10kV创菱B418线32#",
+        "linkType": "master",
+        "type": "            ",
+        "attribute": "",
+        "desc": "            ",
+        "withstandcurrent": "",
+        "ratedcurentvalue": 0,
+        "accuracy": "    ",
+        "length": "     ",
+        "material": [
+          {
+            "id": "10",
+            "name": "高压联络线",
+            "uuid": "68a3ee08-cff1-49c2-ae2d-73db32c2430a",
+            "position": 1,
+            "specification": "curved",
+            "linkType": "master",
+            "type": "JKLYJ       ",
+            "attribute": "",
+            "desc": "1*70        ",
+            "withstandcurrent": "",
+            "ratedcurentvalue": 0,
+            "accuracy": "    ",
+            "length": "     ",
+            "material": [
+              {
+                "id": "35",
+                "name": "跌落式熔断器",
+                "uuid": "07ff49c4-a3aa-4146-ac62-f30233fdf62c",
+                "position": 1,
+                "specification": "",
+                "linkType": "master",
+                "type": "RW11        ",
+                "attribute": "",
+                "desc": "100         ",
+                "withstandcurrent": "",
+                "ratedcurentvalue": 100,
+                "accuracy": "    ",
+                "length": "     ",
+                "material": [
+                  {
+                    "id": "10",
+                    "name": "高压联络线",
+                    "uuid": "67ff9b8a-af02-4ca0-8ccb-aebe2971d93c",
+                    "position": 1,
+                    "specification": "",
+                    "linkType": "master",
+                    "type": "JKLYJ       ",
+                    "attribute": "",
+                    "desc": "1*70        ",
+                    "withstandcurrent": "",
+                    "ratedcurentvalue": 0,
+                    "accuracy": "    ",
+                    "length": "     ",
+                    "material": [
+                      {
+                        "id": "2",
+                        "name": "高压进线电缆",
+                        "uuid": "7c30672b-a0bb-4e2c-90e5-85a55663fb86",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "master",
+                        "type": "YJV22-8.7/15",
+                        "attribute": "",
+                        "desc": "3*20        ",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 90,
+                        "accuracy": "    ",
+                        "length": "50   ",
+                        "material": [
+                          {
+                            "id": "6",
+                            "name": "高压母线",
+                            "uuid": "48bc8f45-0adc-498f-9edf-ec8ff5fd77a4",
+                            "position": 1,
+                            "specification": "",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "",
+                            "desc": "60*6        ",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 912,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "0",
+                                "name": "铜线",
+                                "uuid": "92660e4a-d1b7-43f1-b276-2eadf3b134f0",
+                                "position": 3,
+                                "specification": "",
+                                "linkType": "branch",
+                                "type": "",
+                                "attribute": "",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 0,
+                                "accuracy": "",
+                                "length": "",
+                                "material": [
+                                  {
+                                    "id": "50",
+                                    "name": "避雷器",
+                                    "uuid": "76eef2ea-126f-4aec-9ddd-90406f811fb3",
+                                    "position": 3,
+                                    "specification": "",
+                                    "linkType": "false",
+                                    "type": "HY5WZ       ",
+                                    "attribute": "",
+                                    "desc": "17/45       ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "    ",
+                                    "length": "     "
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "0",
+                                "name": "铜线",
+                                "uuid": "8f09a689-6fdb-4041-a01b-627e696d89ea",
+                                "position": 2,
+                                "specification": "",
+                                "linkType": "branch",
+                                "type": "",
+                                "attribute": "",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 0,
+                                "accuracy": "",
+                                "length": "",
+                                "material": [
+                                  {
+                                    "id": "56",
+                                    "name": "带电显示器",
+                                    "uuid": "6775e8dd-b519-492d-b148-ff96880c106c",
+                                    "position": 2,
+                                    "specification": "",
+                                    "linkType": "false",
+                                    "type": "BGZG-100    ",
+                                    "attribute": "",
+                                    "desc": "            ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "    ",
+                                    "length": "     "
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "42",
+                                "name": "隔离手车",
+                                "uuid": "8d4d113f-84f6-4dc7-9ac5-7c30a3857d0f",
+                                "position": 1,
+                                "specification": "",
+                                "linkType": "master",
+                                "type": "VS1         ",
+                                "attribute": "",
+                                "desc": "1250        ",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 1250,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "6",
+                                    "name": "高压母线",
+                                    "uuid": "945dff60-e036-4a32-b7f2-7e84c4c16a1b",
+                                    "position": 1,
+                                    "specification": "",
+                                    "linkType": "master",
+                                    "type": "TMY         ",
+                                    "attribute": "",
+                                    "desc": "60*6        ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 912,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "material": [
+                                      {
+                                        "id": "6",
+                                        "name": "高压母线",
+                                        "uuid": "6607a07b-c244-4a24-b86a-6ab26300f3cd",
+                                        "position": 1,
+                                        "specification": "",
+                                        "linkType": "master",
+                                        "type": "TMY         ",
+                                        "attribute": "",
+                                        "desc": "80*8        ",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "     "
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "next": [
+      {
+        "number": "",
+        "bid": "GYMP2005261359370X",
+        "cabinetnumber": "G2",
+        "alias": "G2进线总柜",
+        "name": "进线总柜",
+        "creat_time": "",
+        "model": "2",
+        "direction": "left",
+        "material": [
+          {
+            "id": "6",
+            "name": "高压母线",
+            "uuid": "7911dee2-72b3-4b9a-a847-f4abe1f871c3",
+            "position": 1,
+            "specification": "",
+            "linkType": "master",
+            "type": "TMY         ",
+            "attribute": "",
+            "desc": "80*8        ",
+            "withstandcurrent": "",
+            "ratedcurentvalue": 1370,
+            "accuracy": "    ",
+            "length": "     ",
+            "material": [
+              {
+                "id": "0",
+                "name": "铜线",
+                "uuid": "718a35da-89fd-4008-b896-8ddaabcb28be",
+                "position": 2,
+                "specification": "",
+                "linkType": "branch",
+                "type": "",
+                "attribute": "",
+                "desc": "",
+                "withstandcurrent": "",
+                "ratedcurentvalue": 0,
+                "accuracy": "",
+                "length": "",
+                "material": [
+                  {
+                    "id": "56",
+                    "name": "带电显示器",
+                    "uuid": "255f483e-6abc-4bbf-91ac-a0d90a17d136",
+                    "position": 2,
+                    "specification": "",
+                    "linkType": "false",
+                    "type": "BGZG-101    ",
+                    "attribute": "",
+                    "desc": "            ",
+                    "withstandcurrent": "",
+                    "ratedcurentvalue": 0,
+                    "accuracy": "    ",
+                    "length": "     "
+                  }
+                ]
+              },
+              {
+                "id": "36",
+                "name": "断路器手车式",
+                "uuid": "0d0efe0a-a51f-4d03-8d07-61a5530b8827",
+                "position": 1,
+                "specification": "",
+                "linkType": "master",
+                "type": "VS1-12      ",
+                "attribute": "",
+                "desc": "1250        ",
+                "withstandcurrent": "",
+                "ratedcurentvalue": 1250,
+                "accuracy": "    ",
+                "length": "     ",
+                "material": [
+                  {
+                    "id": "6",
+                    "name": "高压母线",
+                    "uuid": "d1fae86c-f5a3-4aa4-a3ed-64104c218f0b",
+                    "position": 1,
+                    "specification": "",
+                    "linkType": "master",
+                    "type": "TMY         ",
+                    "attribute": "",
+                    "desc": "80*8        ",
+                    "withstandcurrent": "",
+                    "ratedcurentvalue": 1370,
+                    "accuracy": "    ",
+                    "length": "     ",
+                    "attach": [
+                      {
+                        "id": "29",
+                        "name": "CT支柱双绕",
+                        "uuid": "a5715c9b-f22c-46da-aeb4-03573b613ef5",
+                        "position": 1,
+                        "specification": "CT",
+                        "linkType": "false",
+                        "type": "LZZBJ9-10   ",
+                        "attribute": "",
+                        "desc": "20/5        ",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 20,
+                        "accuracy": "0.2S",
+                        "length": "     "
+                      },
+                      {
+                        "id": "30",
+                        "name": "CT支柱双绕",
+                        "uuid": "d7e4ac04-c625-4dc6-901c-5f50b77eac38",
+                        "position": 2,
+                        "specification": "CT",
+                        "linkType": "false",
+                        "type": "LZZBJ9-10   ",
+                        "attribute": "",
+                        "desc": "20/5        ",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 20,
+                        "accuracy": "0.2S",
+                        "length": "     "
+                      },
+                      {
+                        "id": "31",
+                        "name": "CT支柱双绕",
+                        "uuid": "a092ccd4-4073-4c7d-8473-5a43f300ffde",
+                        "position": 3,
+                        "specification": "CT",
+                        "linkType": "false",
+                        "type": "LZZBJ9-10   ",
+                        "attribute": "",
+                        "desc": "20/5        ",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 20,
+                        "accuracy": "0.2S",
+                        "length": "     "
+                      }
+                    ],
+                    "material": [
+                      {
+                        "id": "6",
+                        "name": "高压母线",
+                        "uuid": "9a8641c5-2eec-40e3-8d03-d8a589389bb4",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "master",
+                        "type": "TMY         ",
+                        "attribute": "",
+                        "desc": "80*8",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 1370,
+                        "accuracy": "    ",
+                        "length": "     "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "next": [
+          {
+            "number": "",
+            "bid": "553a2312-1a49-4612-af25-ad47cc828f51",
+            "cabinetnumber": "G3",
+            "alias": "G3计量柜",
+            "name": "计量柜",
+            "creat_time": "",
+            "model": "3",
+            "direction": "left",
+            "material": [
+              {
+                "id": "",
+                "name": "高压母线",
+                "uuid": "3c6eaee1-f975-4946-8a28-bcd1710d643a",
+                "position": 1,
+                "specification": "",
+                "linkType": "master",
+                "type": "",
+                "attribute": "高压母线",
+                "desc": "60*6",
+                "withstandcurrent": "",
+                "ratedcurentvalue": 0,
+                "accuracy": "",
+                "length": "",
+                "material": [
+                  {
+                    "id": "",
+                    "name": "高压母线",
+                    "uuid": "acc63199-5d25-4d9a-8b93-e72939ebaca0",
+                    "position": 1,
+                    "specification": "",
+                    "linkType": "master",
+                    "type": "",
+                    "attribute": "高压母线",
+                    "desc": "60*6",
+                    "withstandcurrent": "",
+                    "ratedcurentvalue": 0,
+                    "accuracy": "",
+                    "length": "",
+                    "attach": [
+                      {
+                        "id": "29",
+                        "name": "CT支柱双绕",
+                        "uuid": "57b8796b-3d4f-4db0-a51a-7ce36cd2ecc6",
+                        "position": 1,
+                        "specification": "CT",
+                        "linkType": "master",
+                        "type": "",
+                        "attribute": "CT支柱双绕A相",
+                        "desc": "",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 0,
+                        "accuracy": "",
+                        "length": ""
+                      },
+                      {
+                        "id": "29",
+                        "name": "CT支柱双绕",
+                        "uuid": "49ec5355-7cba-4db2-9f9a-436033b7fad4",
+                        "position": 3,
+                        "specification": "CT",
+                        "linkType": "master",
+                        "type": "",
+                        "attribute": "CT支柱双绕B相",
+                        "desc": "",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 0,
+                        "accuracy": "",
+                        "length": ""
+                      }
+                    ],
+                    "material": [
+                      {
+                        "id": "6",
+                        "name": "高压母线",
+                        "uuid": "4ea51c3a-38af-44ec-ad33-90febba7eb0f",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "master",
+                        "type": "",
+                        "attribute": "高压母线",
+                        "desc": "60*6",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 0,
+                        "accuracy": "",
+                        "length": "",
+                        "material": [
+                          {
+                            "id": "6",
+                            "name": "高压母线",
+                            "uuid": "b0c104e8-5347-44d7-ba72-0670d8e78c77",
+                            "position": 1,
+                            "specification": "",
+                            "linkType": "master",
+                            "type": "",
+                            "attribute": "高压母线",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 0,
+                            "accuracy": "",
+                            "length": ""
+                          },
+                          {
+                            "id": "0",
+                            "name": "铜线",
+                            "uuid": "425a9b9d-6a3a-4164-9b33-6c9d0e76ab25",
+                            "position": 2,
+                            "specification": "",
+                            "linkType": "branch",
+                            "type": "",
+                            "attribute": "铜线",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 0,
+                            "accuracy": "",
+                            "length": "",
+                            "material": [
+                              {
+                                "id": "32",
+                                "name": "电压互感器手车",
+                                "uuid": "4273a59f-0b54-472d-b263-2e62636473e8",
+                                "position": 1,
+                                "specification": "",
+                                "linkType": "branch",
+                                "type": "",
+                                "attribute": "电压互感器手车",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 0,
+                                "accuracy": "",
+                                "length": ""
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "0",
+                    "name": "铜线",
+                    "uuid": "d83aa1fe-bcb0-44da-b2f0-d08cc654c937",
+                    "position": 3,
+                    "specification": "",
+                    "linkType": "branch",
+                    "type": "",
+                    "attribute": "",
+                    "desc": "",
+                    "withstandcurrent": "",
+                    "ratedcurentvalue": 0,
+                    "accuracy": "",
+                    "length": "",
+                    "material": [
+                      {
+                        "id": "56",
+                        "name": "带电显示器",
+                        "uuid": "3cc04014-4a91-4922-8f35-6ff44142af55",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "branch",
+                        "type": "",
+                        "attribute": "",
+                        "desc": "",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 0,
+                        "accuracy": "",
+                        "length": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "next": [
+              {
+                "number": "",
+                "bid": "GYYB2007071528040X",
+                "cabinetnumber": "G4",
+                "alias": "G4压变柜",
+                "name": "压变柜",
+                "creat_time": "",
+                "model": "4",
+                "direction": "left",
+                "material": [
+                  {
+                    "id": "6",
+                    "name": "高压母线",
+                    "uuid": "21fb2edf-8413-4e1b-9d4d-20f0619884fc",
+                    "position": 1,
+                    "specification": "",
+                    "linkType": "master",
+                    "type": "TMY         ",
+                    "attribute": "",
+                    "desc": "60*6        ",
+                    "withstandcurrent": "",
+                    "ratedcurentvalue": 912,
+                    "accuracy": "    ",
+                    "length": "     ",
+                    "material": [
+                      {
+                        "id": "57",
+                        "name": "PT手车星型",
+                        "uuid": "21fb2edf-8413-4e1b-9d4d-20f0619784fc",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "master",
+                        "type": "TMY         ",
+                        "attribute": "",
+                        "desc": " ",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 0,
+                        "accuracy": "    ",
+                        "length": "     "
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "number": "",
+                "bid": "GYMP2005261401130X",
+                "cabinetnumber": "G5",
+                "alias": "G5高压出线柜",
+                "name": "高压出线柜",
+                "creat_time": "",
+                "model": "5",
+                "direction": "left",
+                "material": [
+                  {
+                    "id": "-2",
+                    "name": "高压母线",
+                    "uuid": "95000f5c-2cd0-4759-afea-fbb6f419b234",
+                    "position": 1,
+                    "specification": "",
+                    "linkType": "master",
+                    "type": "TMY",
+                    "attribute": "",
+                    "desc": "80*8",
+                    "withstandcurrent": "",
+                    "ratedcurentvalue": 0,
+                    "accuracy": "    ",
+                    "length": "     ",
+                    "material": [
+                      {
+                        "id": "6",
+                        "name": "高压母线",
+                        "uuid": "44579128-4282-4afa-99cd-f11b1bd90b2a",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "master",
+                        "type": "TMY         ",
+                        "attribute": "",
+                        "desc": "60*6        ",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 912,
+                        "accuracy": "    ",
+                        "length": "     ",
+                        "material": [
+                          {
+                            "id": "36",
+                            "name": "断路器手车式",
+                            "uuid": "aca4d383-f0c1-4482-bdc2-2c4a1b862617",
+                            "position": 1,
+                            "specification": "",
+                            "linkType": "master",
+                            "type": "VS1-12      ",
+                            "attribute": "",
+                            "desc": "630         ",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 630,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "6",
+                                "name": "高压母线",
+                                "uuid": "b6d81f01-b9e9-4b75-ac2c-a986742b148c",
+                                "position": 1,
+                                "specification": "",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "",
+                                "desc": "60*6        ",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 912,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "attach": [
+                                  {
+                                    "id": "29",
+                                    "name": "CT支柱双绕",
+                                    "uuid": "0ba50b0c-0ed9-4022-9cb4-b514955b4bf1",
+                                    "position": 1,
+                                    "specification": "CT",
+                                    "linkType": "false",
+                                    "type": "LZZBJ9-10   ",
+                                    "attribute": "",
+                                    "desc": "10/5        ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 10,
+                                    "accuracy": "0.2S",
+                                    "length": "     "
+                                  },
+                                  {
+                                    "id": "30",
+                                    "name": "CT支柱双绕",
+                                    "uuid": "d3df2be5-1ef0-46a5-aa3b-52158a708e8b",
+                                    "position": 2,
+                                    "specification": "CT",
+                                    "linkType": "false",
+                                    "type": "LZZBJ9-10   ",
+                                    "attribute": "",
+                                    "desc": "10/5        ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 10,
+                                    "accuracy": "0.2S",
+                                    "length": "     "
+                                  },
+                                  {
+                                    "id": "31",
+                                    "name": "CT支柱双绕",
+                                    "uuid": "95cab1cf-0081-4751-94cd-0ed0a96fa2b4",
+                                    "position": 3,
+                                    "specification": "CT",
+                                    "linkType": "false",
+                                    "type": "LZZBJ9-10   ",
+                                    "attribute": "",
+                                    "desc": "10/5        ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 10,
+                                    "accuracy": "0.2S",
+                                    "length": "     "
+                                  }
+                                ],
+                                "material": [
+                                  {
+                                    "id": "0",
+                                    "name": "铜线",
+                                    "uuid": "a3f5b51d-0b3e-4a74-88b7-2127867c495a",
+                                    "position": 4,
+                                    "specification": "",
+                                    "linkType": "branch",
+                                    "type": "",
+                                    "attribute": "",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "",
+                                    "length": "",
+                                    "material": [
+                                      {
+                                        "id": "56",
+                                        "name": "带电显示器",
+                                        "uuid": "4a3d51a7-ae75-458b-9633-37720a62d08c",
+                                        "position": 4,
+                                        "specification": "",
+                                        "linkType": "false",
+                                        "type": "BGZG-102    ",
+                                        "attribute": "",
+                                        "desc": "            ",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "     "
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "0",
+                                    "name": "铜线",
+                                    "uuid": "34fc9759-9b51-405d-8736-509c569109ab",
+                                    "position": 3,
+                                    "specification": "",
+                                    "linkType": "branch",
+                                    "type": "",
+                                    "attribute": "",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "",
+                                    "length": "",
+                                    "material": [
+                                      {
+                                        "id": "46",
+                                        "name": "接地刀闸",
+                                        "uuid": "7bf83ec8-1549-4b38-ac14-23a302bbd2b2",
+                                        "position": 3,
+                                        "specification": "",
+                                        "linkType": "master",
+                                        "type": "JN15        ",
+                                        "attribute": "",
+                                        "desc": "10/30       ",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "     "
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "0",
+                                    "name": "铜线",
+                                    "uuid": "3c513cd1-74b3-4205-b739-55e3786f1958",
+                                    "position": 2,
+                                    "specification": "",
+                                    "linkType": "branch",
+                                    "type": "",
+                                    "attribute": "",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "",
+                                    "length": "",
+                                    "material": [
+                                      {
+                                        "id": "50",
+                                        "name": "避雷器",
+                                        "uuid": "aedd195c-ce5e-4031-8630-1d873b68fa43",
+                                        "position": 2,
+                                        "specification": "",
+                                        "linkType": "false",
+                                        "type": "HY5WZ       ",
+                                        "attribute": "",
+                                        "desc": "17/45       ",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "     "
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "3",
+                                    "name": "高压出线电缆",
+                                    "uuid": "13f9df9f-23d5-4328-bbcc-4f7300962a71",
+                                    "position": 1,
+                                    "specification": "",
+                                    "linkType": "master",
+                                    "type": "YJV22-8.7/15",
+                                    "attribute": "",
+                                    "desc": "3*25        ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 90,
+                                    "accuracy": "    ",
+                                    "length": "25   "
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "next": [
+                  {
+                    "number": "",
+                    "bid": "DYMP2005261404580X",
+                    "cabinetnumber": "#1-1",
+                    "alias": "#1-1低压进线柜",
+                    "name": "低压进线柜",
+                    "creat_time": "",
+                    "model": "6",
+                    "direction": "left",
+                    "material": [
+                      {
+                        "id": "12",
+                        "name": "变压器DY",
+                        "uuid": "1c6e6ead-821c-429a-b920-41089023755a",
+                        "position": 1,
+                        "specification": "#1",
+                        "linkType": "master",
+                        "type": "S11-M-50",
+                        "attribute": "",
+                        "desc": "50",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 73,
+                        "accuracy": "    ",
+                        "length": "     ",
+                        "material": [
+                          {
+                            "id": "11",
+                            "name": "低压联络线",
+                            "uuid": "61fa815c-a0b6-4908-93ff-2707aecaa2fe",
+                            "position": 1,
+                            "specification": "",
+                            "linkType": "master",
+                            "type": "MST         ",
+                            "attribute": "",
+                            "desc": "50*5",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 0,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "9",
+                                "name": "低压母桥",
+                                "uuid": "aa02ecd2-1464-46c9-a731-8f30486f7b9c",
+                                "position": 1,
+                                "specification": "",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "",
+                                "desc": "50*5+40*4",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 700,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "8",
+                                    "name": "低压母线",
+                                    "uuid": "b61fae7e-bb49-478a-a2d1-30ee336dd70a",
+                                    "position": 1,
+                                    "specification": "",
+                                    "linkType": "master",
+                                    "type": "TMY         ",
+                                    "attribute": "",
+                                    "desc": "50*5",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 700,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "material": [
+                                      {
+                                        "id": "0",
+                                        "name": "铜线",
+                                        "uuid": "9ede999f-8e68-4626-a147-cd72a3680af0",
+                                        "position": 2,
+                                        "specification": "",
+                                        "linkType": "branch",
+                                        "type": "",
+                                        "attribute": "",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "",
+                                        "length": "",
+                                        "material": [
+                                          {
+                                            "id": "50",
+                                            "name": "避雷器",
+                                            "uuid": "9f5ee717-5451-4da2-811f-ebd46472e1f4",
+                                            "position": 2,
+                                            "specification": "",
+                                            "linkType": "false",
+                                            "type": "RSY1        ",
+                                            "attribute": "",
+                                            "desc": "40",
+                                            "withstandcurrent": "",
+                                            "ratedcurentvalue": 0,
+                                            "accuracy": "    ",
+                                            "length": "     "
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "48",
+                                        "name": "刀型转换刀闸",
+                                        "uuid": "778ebb76-0d2c-4113-975b-9c68c1445c59",
+                                        "position": 1,
+                                        "specification": "",
+                                        "linkType": "master",
+                                        "type": "HS13BX      ",
+                                        "attribute": "",
+                                        "desc": "600/41",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 600,
+                                        "accuracy": "    ",
+                                        "length": "     ",
+                                        "material": [
+                                          {
+                                            "id": "8",
+                                            "name": "低压母线",
+                                            "uuid": "1fb42e69-5c9f-4aad-9fff-0cd0945afab8",
+                                            "position": 1,
+                                            "specification": "",
+                                            "linkType": "master",
+                                            "type": "TMY         ",
+                                            "attribute": "",
+                                            "desc": "50*5",
+                                            "withstandcurrent": "",
+                                            "ratedcurentvalue": 700,
+                                            "accuracy": "    ",
+                                            "length": "     ",
+                                            "material": [
+                                              {
+                                                "id": "41",
+                                                "name": "断路器固定式",
+                                                "uuid": "ccc6ebb2-717a-4d2e-ab38-7b104e9bd75f",
+                                                "position": 1,
+                                                "specification": "",
+                                                "linkType": "master",
+                                                "type": "GSW3        ",
+                                                "attribute": "",
+                                                "desc": "2000/3",
+                                                "withstandcurrent": "",
+                                                "ratedcurentvalue": 630,
+                                                "accuracy": "    ",
+                                                "length": "     ",
+                                                "material": [
+                                                  {
+                                                    "id": "8",
+                                                    "name": "低压母线",
+                                                    "uuid": "e42d17a4-0fd4-413f-9602-504415f284cf",
+                                                    "position": 1,
+                                                    "specification": "",
+                                                    "linkType": "master",
+                                                    "type": "TMY         ",
+                                                    "attribute": "",
+                                                    "desc": "50*5",
+                                                    "withstandcurrent": "",
+                                                    "ratedcurentvalue": 700,
+                                                    "accuracy": "    ",
+                                                    "length": "     ",
+                                                    "attach": [
+                                                      {
+                                                        "id": "20",
+                                                        "name": "CT穿芯单绕",
+                                                        "uuid": "c67fe44b-64c9-4d78-a31c-7b405ee08997",
+                                                        "position": 1,
+                                                        "specification": "CT",
+                                                        "linkType": "false",
+                                                        "type": "BH-0.66     ",
+                                                        "attribute": "",
+                                                        "desc": "200/5",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 200,
+                                                        "accuracy": "0.2S",
+                                                        "length": "     "
+                                                      },
+                                                      {
+                                                        "id": "21",
+                                                        "name": "CT穿芯单绕",
+                                                        "uuid": "92d16de9-501b-441a-942d-f086fb634555",
+                                                        "position": 2,
+                                                        "specification": "CT",
+                                                        "linkType": "false",
+                                                        "type": "BH-0.66     ",
+                                                        "attribute": "",
+                                                        "desc": "200/5",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 200,
+                                                        "accuracy": "0.2S",
+                                                        "length": "     "
+                                                      },
+                                                      {
+                                                        "id": "22",
+                                                        "name": "CT穿芯单绕",
+                                                        "uuid": "86624292-a1e9-4a5c-86d8-fb6dd0ff6e06",
+                                                        "position": 3,
+                                                        "specification": "CT",
+                                                        "linkType": "false",
+                                                        "type": "BH-0.66     ",
+                                                        "attribute": "",
+                                                        "desc": "200/5",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 200,
+                                                        "accuracy": "0.2S",
+                                                        "length": "     "
+                                                      }
+                                                    ],
+                                                    "material": [
+                                                      {
+                                                        "id": "8",
+                                                        "name": "低压母线",
+                                                        "uuid": "6436b7f2-ebbd-4e18-bd5b-99f5315ebfe7",
+                                                        "position": 1,
+                                                        "specification": "",
+                                                        "linkType": "master",
+                                                        "type": "TMY         ",
+                                                        "attribute": "",
+                                                        "desc": "50*5",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 700,
+                                                        "accuracy": "    ",
+                                                        "length": "     "
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "-5",
+                        "name": "零线",
+                        "uuid": "ba5ac9d5-da9c-40a9-b5b5-6b981248fdd3",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "branch",
+                        "type": "TMY",
+                        "attribute": "",
+                        "desc": "40*4",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 0,
+                        "accuracy": "    ",
+                        "length": "     "
+                      }
+                    ],
+                    "next": [
+                      {
+                        "number": "",
+                        "bid": "HCDYKX20215311760",
+                        "cabinetnumber": "#1-2",
+                        "alias": "#1-2低压馈线柜",
+                        "name": "低压馈线柜",
+                        "creat_time": "",
+                        "model": "9",
+                        "direction": "left",
+                        "material": [
+                          {
+                            "id": "8",
+                            "name": "低压母线",
+                            "uuid": "eae101c9-8008-48b7-a174-6ef80642dd61",
+                            "position": 1,
+                            "specification": "50*5        ",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "xx",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 700,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "47",
+                                "name": "开启式刀闸",
+                                "uuid": "d2a52399-6d29-4a26-b93b-3684bb17871e",
+                                "position": 1,
+                                "specification": "600/31      ",
+                                "linkType": "master",
+                                "type": "HD13BX      ",
+                                "attribute": "xx",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 600,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "8",
+                                    "name": "低压母线",
+                                    "uuid": "53718d2c-758c-4cfa-9976-803402610f14",
+                                    "position": 1,
+                                    "specification": "左",
+                                    "linkType": "master",
+                                    "type": "TMY         ",
+                                    "attribute": "xx",
+                                    "desc": "左",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 700,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "material": [
+                                      {
+                                        "id": "8",
+                                        "name": "低压母线",
+                                        "uuid": "7124bf61-5b27-4880-954e-28d4b9c4d761",
+                                        "position": 1,
+                                        "specification": "20*3        ",
+                                        "linkType": "master",
+                                        "type": "TMY         ",
+                                        "attribute": "xx",
+                                        "desc": "20*3        ",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 220,
+                                        "accuracy": "    ",
+                                        "length": "     ",
+                                        "material": [
+                                          {
+                                            "id": "41",
+                                            "name": "断路器固定式",
+                                            "uuid": "bbe72795-4f1f-4ba9-a260-8eebce6b6c91",
+                                            "position": 1,
+                                            "specification": "250L        ",
+                                            "linkType": "master",
+                                            "type": "GSM3        ",
+                                            "attribute": "xx",
+                                            "desc": "250L        ",
+                                            "withstandcurrent": "",
+                                            "ratedcurentvalue": 200,
+                                            "accuracy": "    ",
+                                            "length": "     ",
+                                            "material": [
+                                              {
+                                                "id": "5",
+                                                "name": "低压出线电缆",
+                                                "uuid": "ef18560c-95c0-4a37-a74e-a5afedc56072",
+                                                "position": 1,
+                                                "specification": "1",
+                                                "linkType": "master",
+                                                "type": "YJV-0.6/1   ",
+                                                "attribute": "xx",
+                                                "desc": "1",
+                                                "withstandcurrent": "",
+                                                "ratedcurentvalue": 50,
+                                                "accuracy": "    ",
+                                                "length": "30m  ",
+                                                "attach": [
+                                                  {
+                                                    "id": "20",
+                                                    "name": "CT穿芯单绕",
+                                                    "uuid": "ac334028-8052-4708-a1be-1cf3c72c3763",
+                                                    "position": 1,
+                                                    "specification": "100/5       ",
+                                                    "linkType": "branch",
+                                                    "type": "BH-0.66     ",
+                                                    "attribute": "xx",
+                                                    "desc": "",
+                                                    "withstandcurrent": "",
+                                                    "ratedcurentvalue": 100,
+                                                    "accuracy": "0.2S",
+                                                    "length": "     "
+                                                  },
+                                                  {
+                                                    "id": "21",
+                                                    "name": "CT穿芯单绕",
+                                                    "uuid": "48df7db0-7abf-4348-b276-38ee8af57464",
+                                                    "position": 2,
+                                                    "specification": "100/5       ",
+                                                    "linkType": "branch",
+                                                    "type": "BH-0.66     ",
+                                                    "attribute": "xx",
+                                                    "desc": "",
+                                                    "withstandcurrent": "",
+                                                    "ratedcurentvalue": 100,
+                                                    "accuracy": "0.2S",
+                                                    "length": "     "
+                                                  },
+                                                  {
+                                                    "id": "22",
+                                                    "name": "CT穿芯单绕",
+                                                    "uuid": "5ce1c125-ff44-4613-83ea-196d77465e74",
+                                                    "position": 3,
+                                                    "specification": "100/5       ",
+                                                    "linkType": "branch",
+                                                    "type": "BH-0.66     ",
+                                                    "attribute": "xx",
+                                                    "desc": "",
+                                                    "withstandcurrent": "",
+                                                    "ratedcurentvalue": 100,
+                                                    "accuracy": "0.2S",
+                                                    "length": "     "
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "8",
+                                    "name": "低压母线",
+                                    "uuid": "fe106984-514a-493b-9f52-f647bb8cad62",
+                                    "position": 2,
+                                    "specification": "右",
+                                    "linkType": "master",
+                                    "type": "TMY         ",
+                                    "attribute": "xx",
+                                    "desc": "右",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 700,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "material": [
+                                      {
+                                        "id": "8",
+                                        "name": "低压母线",
+                                        "uuid": "2b22a3da-48fd-4a09-b775-6dbd7fc2be58",
+                                        "position": 1,
+                                        "specification": "20*3        ",
+                                        "linkType": "master",
+                                        "type": "TMY         ",
+                                        "attribute": "xx",
+                                        "desc": "20*3        ",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 220,
+                                        "accuracy": "    ",
+                                        "length": "     ",
+                                        "material": [
+                                          {
+                                            "id": "41",
+                                            "name": "断路器固定式",
+                                            "uuid": "308c2c62-2ded-4fe2-abe2-37ee876c1463",
+                                            "position": 1,
+                                            "specification": "250L        ",
+                                            "linkType": "master",
+                                            "type": "GSM3        ",
+                                            "attribute": "xx",
+                                            "desc": "250L        ",
+                                            "withstandcurrent": "",
+                                            "ratedcurentvalue": 200,
+                                            "accuracy": "    ",
+                                            "length": "     ",
+                                            "material": [
+                                              {
+                                                "id": "5",
+                                                "name": "低压出线电缆",
+                                                "uuid": "7099e2c2-f9ea-47c5-8071-745cb9859ac4",
+                                                "position": 1,
+                                                "specification": "2",
+                                                "linkType": "master",
+                                                "type": "YJV-0.6/1   ",
+                                                "attribute": "xx",
+                                                "desc": "2",
+                                                "withstandcurrent": "",
+                                                "ratedcurentvalue": 50,
+                                                "accuracy": "    ",
+                                                "length": "30m  ",
+                                                "attach": [
+                                                  {
+                                                    "id": "20",
+                                                    "name": "CT穿芯单绕",
+                                                    "uuid": "c097d5f3-ba0e-4ef7-8c7d-3bb411c99e81",
+                                                    "position": 1,
+                                                    "specification": "100/5       ",
+                                                    "linkType": "branch",
+                                                    "type": "BH-0.66     ",
+                                                    "attribute": "xx",
+                                                    "desc": "",
+                                                    "withstandcurrent": "",
+                                                    "ratedcurentvalue": 100,
+                                                    "accuracy": "0.2S",
+                                                    "length": "     "
+                                                  },
+                                                  {
+                                                    "id": "21",
+                                                    "name": "CT穿芯单绕",
+                                                    "uuid": "02afa287-7d9d-4f51-845f-70efcc0f57de",
+                                                    "position": 2,
+                                                    "specification": "100/5       ",
+                                                    "linkType": "branch",
+                                                    "type": "BH-0.66     ",
+                                                    "attribute": "xx",
+                                                    "desc": "",
+                                                    "withstandcurrent": "",
+                                                    "ratedcurentvalue": 100,
+                                                    "accuracy": "0.2S",
+                                                    "length": "     "
+                                                  },
+                                                  {
+                                                    "id": "22",
+                                                    "name": "CT穿芯单绕",
+                                                    "uuid": "95f3b6ed-78dd-4afe-ae6d-b8f4f9a4a4dc",
+                                                    "position": 3,
+                                                    "specification": "100/5       ",
+                                                    "linkType": "branch",
+                                                    "type": "BH-0.66     ",
+                                                    "attribute": "xx",
+                                                    "desc": "",
+                                                    "withstandcurrent": "",
+                                                    "ratedcurentvalue": 100,
+                                                    "accuracy": "0.2S",
+                                                    "length": "     "
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "-3",
+                            "name": "低压母线",
+                            "uuid": "a1a814ec-c193-4359-954f-79428ded4c80",
+                            "position": 2,
+                            "specification": "",
+                            "linkType": "master",
+                            "type": "TMY",
+                            "attribute": "",
+                            "desc": "50*5",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 0,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "5b725448-24a2-4d02-be87-a9ec1a271715",
+                                "position": 1,
+                                "specification": "50*5        ",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "xx",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 700,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "47",
+                                    "name": "开启式刀闸",
+                                    "uuid": "c0c1b7fb-b4b2-40a7-b391-29e1475fff1b",
+                                    "position": 1,
+                                    "specification": "600/31      ",
+                                    "linkType": "master",
+                                    "type": "HD13BX      ",
+                                    "attribute": "xx",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 600,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "material": [
+                                      {
+                                        "id": "8",
+                                        "name": "低压母线",
+                                        "uuid": "d8ee8169-524d-4884-9c65-7a70014af1cb",
+                                        "position": 1,
+                                        "specification": "左",
+                                        "linkType": "master",
+                                        "type": "TMY         ",
+                                        "attribute": "xx",
+                                        "desc": "左",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 700,
+                                        "accuracy": "    ",
+                                        "length": "     ",
+                                        "material": [
+                                          {
+                                            "id": "8",
+                                            "name": "低压母线",
+                                            "uuid": "c64c3cdc-a715-4748-9a06-20b375d7d776",
+                                            "position": 1,
+                                            "specification": "15*3        ",
+                                            "linkType": "master",
+                                            "type": "TMY         ",
+                                            "attribute": "xx",
+                                            "desc": "15*3        ",
+                                            "withstandcurrent": "",
+                                            "ratedcurentvalue": 170,
+                                            "accuracy": "    ",
+                                            "length": "     ",
+                                            "material": [
+                                              {
+                                                "id": "41",
+                                                "name": "断路器固定式",
+                                                "uuid": "b4cfd728-8c1b-4db5-99a1-3445efb99646",
+                                                "position": 1,
+                                                "specification": "125L        ",
+                                                "linkType": "master",
+                                                "type": "GSM3        ",
+                                                "attribute": "xx",
+                                                "desc": "125L        ",
+                                                "withstandcurrent": "",
+                                                "ratedcurentvalue": 40,
+                                                "accuracy": "    ",
+                                                "length": "     ",
+                                                "material": [
+                                                  {
+                                                    "id": "5",
+                                                    "name": "低压出线电缆",
+                                                    "uuid": "c4591864-f0a2-45a1-86c2-99423c482c6b",
+                                                    "position": 1,
+                                                    "specification": "3",
+                                                    "linkType": "master",
+                                                    "type": "YJV-0.6/1   ",
+                                                    "attribute": "xx",
+                                                    "desc": "3",
+                                                    "withstandcurrent": "",
+                                                    "ratedcurentvalue": 50,
+                                                    "accuracy": "    ",
+                                                    "length": "30m  ",
+                                                    "attach": [
+                                                      {
+                                                        "id": "20",
+                                                        "name": "CT穿芯单绕",
+                                                        "uuid": "f5758171-25ab-4a2a-b431-4899ff170b1a",
+                                                        "position": 1,
+                                                        "specification": "100/5       ",
+                                                        "linkType": "branch",
+                                                        "type": "BH-0.66     ",
+                                                        "attribute": "xx",
+                                                        "desc": "",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 100,
+                                                        "accuracy": "0.2S",
+                                                        "length": "     "
+                                                      },
+                                                      {
+                                                        "id": "21",
+                                                        "name": "CT穿芯单绕",
+                                                        "uuid": "fb75774a-bd4d-40a6-987a-969ee9afc9a2",
+                                                        "position": 2,
+                                                        "specification": "100/5       ",
+                                                        "linkType": "branch",
+                                                        "type": "BH-0.66     ",
+                                                        "attribute": "xx",
+                                                        "desc": "",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 100,
+                                                        "accuracy": "0.2S",
+                                                        "length": "     "
+                                                      },
+                                                      {
+                                                        "id": "22",
+                                                        "name": "CT穿芯单绕",
+                                                        "uuid": "0031bd00-031e-4b9a-a5ef-b31fd37ce5be",
+                                                        "position": 3,
+                                                        "specification": "100/5       ",
+                                                        "linkType": "branch",
+                                                        "type": "BH-0.66     ",
+                                                        "attribute": "xx",
+                                                        "desc": "",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 100,
+                                                        "accuracy": "0.2S",
+                                                        "length": "     "
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "8",
+                                        "name": "低压母线",
+                                        "uuid": "db1824d5-534c-47e5-9beb-ed013cbe6b59",
+                                        "position": 2,
+                                        "specification": "右",
+                                        "linkType": "master",
+                                        "type": "TMY         ",
+                                        "attribute": "xx",
+                                        "desc": "右",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 700,
+                                        "accuracy": "    ",
+                                        "length": "     ",
+                                        "material": [
+                                          {
+                                            "id": "8",
+                                            "name": "低压母线",
+                                            "uuid": "e377a954-5849-4711-91a0-5b29cbf3ac34",
+                                            "position": 1,
+                                            "specification": "15*3        ",
+                                            "linkType": "master",
+                                            "type": "TMY         ",
+                                            "attribute": "xx",
+                                            "desc": "15*3        ",
+                                            "withstandcurrent": "",
+                                            "ratedcurentvalue": 170,
+                                            "accuracy": "    ",
+                                            "length": "     ",
+                                            "material": [
+                                              {
+                                                "id": "41",
+                                                "name": "断路器固定式",
+                                                "uuid": "e53dba53-81a5-45c4-b8a5-882f6ba2ba69",
+                                                "position": 1,
+                                                "specification": "125L        ",
+                                                "linkType": "master",
+                                                "type": "GSM3        ",
+                                                "attribute": "xx",
+                                                "desc": "125L        ",
+                                                "withstandcurrent": "",
+                                                "ratedcurentvalue": 32,
+                                                "accuracy": "    ",
+                                                "length": "     ",
+                                                "material": [
+                                                  {
+                                                    "id": "5",
+                                                    "name": "低压出线电缆",
+                                                    "uuid": "b6b44ea8-84c9-4dc0-86d3-4f35b7d7e5d1",
+                                                    "position": 1,
+                                                    "specification": "4",
+                                                    "linkType": "master",
+                                                    "type": "YJV-0.6/1   ",
+                                                    "attribute": "xx",
+                                                    "desc": "4",
+                                                    "withstandcurrent": "",
+                                                    "ratedcurentvalue": 72,
+                                                    "accuracy": "    ",
+                                                    "length": "10m  ",
+                                                    "attach": [
+                                                      {
+                                                        "id": "20",
+                                                        "name": "CT穿芯单绕",
+                                                        "uuid": "fefe4796-78a3-4865-8f8d-6ad337a95043",
+                                                        "position": 1,
+                                                        "specification": "100/5       ",
+                                                        "linkType": "branch",
+                                                        "type": "BH-0.66     ",
+                                                        "attribute": "xx",
+                                                        "desc": "",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 100,
+                                                        "accuracy": "0.2S",
+                                                        "length": "     "
+                                                      },
+                                                      {
+                                                        "id": "21",
+                                                        "name": "CT穿芯单绕",
+                                                        "uuid": "1fdb3d45-37d5-41cb-bd24-fe3a3f8010f4",
+                                                        "position": 2,
+                                                        "specification": "100/5       ",
+                                                        "linkType": "branch",
+                                                        "type": "BH-0.66     ",
+                                                        "attribute": "xx",
+                                                        "desc": "",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 100,
+                                                        "accuracy": "0.2S",
+                                                        "length": "     "
+                                                      },
+                                                      {
+                                                        "id": "22",
+                                                        "name": "CT穿芯单绕",
+                                                        "uuid": "18faa1d9-fc1f-48ac-a29b-3a65a8399171",
+                                                        "position": 3,
+                                                        "specification": "100/5       ",
+                                                        "linkType": "branch",
+                                                        "type": "BH-0.66     ",
+                                                        "attribute": "xx",
+                                                        "desc": "",
+                                                        "withstandcurrent": "",
+                                                        "ratedcurentvalue": 100,
+                                                        "accuracy": "0.2S",
+                                                        "length": "     "
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "number": "",
+                        "bid": "RVCX1906171641150E",
+                        "cabinetnumber": "#1-3",
+                        "alias": "#1-3电容柜",
+                        "name": "电容柜",
+                        "creat_time": "",
+                        "model": "8",
+                        "direction": "left",
+                        "material": [
+                          {
+                            "id": "-2",
+                            "name": "低压母线",
+                            "uuid": "a9a6483c-d88e-44b1-bb77-0bacc599440c",
+                            "position": 1,
+                            "specification": "xx",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 0,
+                            "accuracy": "",
+                            "length": "",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "dcccb354-5c29-483a-b361-7f441b492776",
+                                "position": 1,
+                                "specification": "xx",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 0,
+                                "accuracy": "",
+                                "length": "",
+                                "material": [
+                                  {
+                                    "id": "57",
+                                    "name": "电容柜组件",
+                                    "uuid": "547ecae3-0a5f-4279-b7cd-9d23c7374a7b",
+                                    "position": 1,
+                                    "specification": "xx",
+                                    "linkType": "master",
+                                    "type": "TMY         ",
+                                    "attribute": "",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "",
+                                    "length": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "number": "",
+                "bid": "GYMP2005261401480X",
+                "cabinetnumber": "G6",
+                "alias": "G6高压出线柜",
+                "name": "高压出线柜",
+                "creat_time": "",
+                "model": "5",
+                "direction": "left",
+                "material": [
+                  {
+                    "id": "-2",
+                    "name": "高压母线",
+                    "uuid": "74172db4-bfd9-4a15-b232-9734634dfee8",
+                    "position": 1,
+                    "specification": "",
+                    "linkType": "master",
+                    "type": "TMY",
+                    "attribute": "",
+                    "desc": "80*8",
+                    "withstandcurrent": "",
+                    "ratedcurentvalue": 0,
+                    "accuracy": "    ",
+                    "length": "     ",
+                    "material": [
+                      {
+                        "id": "6",
+                        "name": "高压母线",
+                        "uuid": "38e1d576-660c-4aa6-8e20-01f329dcae74",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "master",
+                        "type": "TMY         ",
+                        "attribute": "",
+                        "desc": "60*6        ",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 912,
+                        "accuracy": "    ",
+                        "length": "     ",
+                        "material": [
+                          {
+                            "id": "36",
+                            "name": "断路器手车式",
+                            "uuid": "48fe8da7-6e3f-4c06-9c3f-b9e8da855e14",
+                            "position": 1,
+                            "specification": "",
+                            "linkType": "master",
+                            "type": "VS1-12      ",
+                            "attribute": "",
+                            "desc": "630         ",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 630,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "6",
+                                "name": "高压母线",
+                                "uuid": "9dbe4f14-9141-455f-8511-9705db9494aa",
+                                "position": 1,
+                                "specification": "",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "",
+                                "desc": "60*6        ",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 912,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "attach": [
+                                  {
+                                    "id": "29",
+                                    "name": "CT支柱双绕",
+                                    "uuid": "66211352-bf5d-4ea8-b5ea-2cb95b158aa9",
+                                    "position": 1,
+                                    "specification": "CT",
+                                    "linkType": "false",
+                                    "type": "LZZBJ9-10   ",
+                                    "attribute": "",
+                                    "desc": "10/5        ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 10,
+                                    "accuracy": "0.2S",
+                                    "length": "     "
+                                  },
+                                  {
+                                    "id": "30",
+                                    "name": "CT支柱双绕",
+                                    "uuid": "9c9ee116-4fba-483a-9e6d-24439c715548",
+                                    "position": 2,
+                                    "specification": "CT",
+                                    "linkType": "false",
+                                    "type": "LZZBJ9-10   ",
+                                    "attribute": "",
+                                    "desc": "10/5        ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 10,
+                                    "accuracy": "0.2S",
+                                    "length": "     "
+                                  },
+                                  {
+                                    "id": "31",
+                                    "name": "CT支柱双绕",
+                                    "uuid": "7073bc7e-8a51-405e-ba8e-0496ee098518",
+                                    "position": 3,
+                                    "specification": "CT",
+                                    "linkType": "false",
+                                    "type": "LZZBJ9-10   ",
+                                    "attribute": "",
+                                    "desc": "10/5        ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 10,
+                                    "accuracy": "0.2S",
+                                    "length": "     "
+                                  }
+                                ],
+                                "material": [
+                                  {
+                                    "id": "0",
+                                    "name": "铜线",
+                                    "uuid": "c6416f92-703c-4bdb-8815-c5dbbec4fa41",
+                                    "position": 4,
+                                    "specification": "",
+                                    "linkType": "branch",
+                                    "type": "",
+                                    "attribute": "",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "",
+                                    "length": "",
+                                    "material": [
+                                      {
+                                        "id": "56",
+                                        "name": "带电显示器",
+                                        "uuid": "ed506064-a9f6-4ddc-bc61-9ca3f951d58e",
+                                        "position": 4,
+                                        "specification": "",
+                                        "linkType": "false",
+                                        "type": "BGZG-102    ",
+                                        "attribute": "",
+                                        "desc": "            ",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "     "
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "0",
+                                    "name": "铜线",
+                                    "uuid": "e6f09423-e5f6-41e0-9861-aa41174aea50",
+                                    "position": 3,
+                                    "specification": "",
+                                    "linkType": "branch",
+                                    "type": "",
+                                    "attribute": "",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "",
+                                    "length": "",
+                                    "material": [
+                                      {
+                                        "id": "46",
+                                        "name": "接地刀闸",
+                                        "uuid": "a1a750e2-14f5-4efc-9367-e8b1ca6ec691",
+                                        "position": 3,
+                                        "specification": "",
+                                        "linkType": "master",
+                                        "type": "JN15        ",
+                                        "attribute": "",
+                                        "desc": "10/30       ",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "     "
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "0",
+                                    "name": "铜线",
+                                    "uuid": "78f986ac-44e6-4de7-bdca-9c7718d942d5",
+                                    "position": 2,
+                                    "specification": "",
+                                    "linkType": "branch",
+                                    "type": "",
+                                    "attribute": "",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "",
+                                    "length": "",
+                                    "material": [
+                                      {
+                                        "id": "50",
+                                        "name": "避雷器",
+                                        "uuid": "1ad04dd5-a09e-42ee-bbab-efb24bc5db36",
+                                        "position": 2,
+                                        "specification": "",
+                                        "linkType": "false",
+                                        "type": "HY5WZ       ",
+                                        "attribute": "",
+                                        "desc": "17/45       ",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "     "
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "3",
+                                    "name": "高压出线电缆",
+                                    "uuid": "26a68a1d-3077-4806-98bb-9fb00a58a58d",
+                                    "position": 1,
+                                    "specification": "",
+                                    "linkType": "master",
+                                    "type": "YJV22-8.7/15",
+                                    "attribute": "",
+                                    "desc": "3*25        ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 90,
+                                    "accuracy": "    ",
+                                    "length": "25   "
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "next": [
+                  {
+                    "number": "",
+                    "bid": "DYMP2005261415370X",
+                    "cabinetnumber": "#2-1",
+                    "alias": "#2-1低压进线柜",
+                    "name": "低压进线柜",
+                    "creat_time": "",
+                    "model": "6",
+                    "direction": "right",
+                    "material": [
+                      {
+                        "id": "12",
+                        "name": "变压器DY",
+                        "uuid": "bd7fdaa5-6fa3-4fee-a1b4-ff651ba2a541",
+                        "position": 1,
+                        "specification": "#2",
+                        "linkType": "master",
+                        "type": "SC10-50",
+                        "attribute": "",
+                        "desc": "50",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 73,
+                        "accuracy": "    ",
+                        "length": "     ",
+                        "material": [
+                          {
+                            "id": "11",
+                            "name": "低压联络线",
+                            "uuid": "ac3a11a6-0d68-46a5-a566-f7398b4da8a8",
+                            "position": 1,
+                            "specification": "",
+                            "linkType": "master",
+                            "type": "MST         ",
+                            "attribute": "",
+                            "desc": "50*5",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 0,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "9",
+                                "name": "低压母桥",
+                                "uuid": "04830cb6-4147-436d-bf20-40d92bf107c9",
+                                "position": 1,
+                                "specification": "",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "",
+                                "desc": "50*5+40*4",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 700,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "8",
+                                    "name": "低压母线",
+                                    "uuid": "fd493be1-61fb-4a01-9731-fcc37ad95966",
+                                    "position": 1,
+                                    "specification": "",
+                                    "linkType": "master",
+                                    "type": "TMY         ",
+                                    "attribute": "",
+                                    "desc": "50*5",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 700,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "material": [
+                                      {
+                                        "id": "0",
+                                        "name": "铜线",
+                                        "uuid": "64cefd08-a637-4c10-8605-887fa1ca6b7a",
+                                        "position": 2,
+                                        "specification": "",
+                                        "linkType": "branch",
+                                        "type": "",
+                                        "attribute": "",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "",
+                                        "length": "",
+                                        "material": [
+                                          {
+                                            "id": "50",
+                                            "name": "避雷器",
+                                            "uuid": "790cc7c7-6934-40b0-b320-b8ac6241a3d9",
+                                            "position": 2,
+                                            "specification": "",
+                                            "linkType": "false",
+                                            "type": "RSY         ",
+                                            "attribute": "",
+                                            "desc": "40",
+                                            "withstandcurrent": "",
+                                            "ratedcurentvalue": 0,
+                                            "accuracy": "    ",
+                                            "length": "     "
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "40",
+                                        "name": "断路器手车式",
+                                        "uuid": "3f4d737f-7ed2-441a-9bd0-6adb064da1d1",
+                                        "position": 1,
+                                        "specification": "",
+                                        "linkType": "master",
+                                        "type": "GSW3        ",
+                                        "attribute": "",
+                                        "desc": "2000/3",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 48,
+                                        "accuracy": "    ",
+                                        "length": "     ",
+                                        "material": [
+                                          {
+                                            "id": "8",
+                                            "name": "低压母线",
+                                            "uuid": "a418e49c-e813-456f-8e9f-cca6a7eee424",
+                                            "position": 1,
+                                            "specification": "",
+                                            "linkType": "master",
+                                            "type": "TMY         ",
+                                            "attribute": "",
+                                            "desc": "50*5",
+                                            "withstandcurrent": "",
+                                            "ratedcurentvalue": 700,
+                                            "accuracy": "    ",
+                                            "length": "     ",
+                                            "attach": [
+                                              {
+                                                "id": "20",
+                                                "name": "CT穿芯单绕",
+                                                "uuid": "4819c987-2a5a-4aaa-830c-828194f76923",
+                                                "position": 1,
+                                                "specification": "CT",
+                                                "linkType": "false",
+                                                "type": "BH-0.66     ",
+                                                "attribute": "",
+                                                "desc": "200/5",
+                                                "withstandcurrent": "",
+                                                "ratedcurentvalue": 200,
+                                                "accuracy": "0.2S",
+                                                "length": "     "
+                                              },
+                                              {
+                                                "id": "21",
+                                                "name": "CT穿芯单绕",
+                                                "uuid": "97ede547-f87f-4a0a-847c-d59275302bf2",
+                                                "position": 2,
+                                                "specification": "CT",
+                                                "linkType": "false",
+                                                "type": "BH-0.66     ",
+                                                "attribute": "",
+                                                "desc": "200/5",
+                                                "withstandcurrent": "",
+                                                "ratedcurentvalue": 200,
+                                                "accuracy": "0.2S",
+                                                "length": "     "
+                                              },
+                                              {
+                                                "id": "22",
+                                                "name": "CT穿芯单绕",
+                                                "uuid": "f670a9b8-4956-4fb0-9d24-be86d1f2959a",
+                                                "position": 3,
+                                                "specification": "CT",
+                                                "linkType": "false",
+                                                "type": "BH-0.66     ",
+                                                "attribute": "",
+                                                "desc": "200/5",
+                                                "withstandcurrent": "",
+                                                "ratedcurentvalue": 200,
+                                                "accuracy": "0.2S",
+                                                "length": "     "
+                                              }
+                                            ],
+                                            "material": [
+                                              {
+                                                "id": "8",
+                                                "name": "低压母线",
+                                                "uuid": "b4fb69fe-3b5e-4a5c-9cb7-e30698ac4514",
+                                                "position": 1,
+                                                "specification": "",
+                                                "linkType": "master",
+                                                "type": "TMY         ",
+                                                "attribute": "",
+                                                "desc": "50*5",
+                                                "withstandcurrent": "",
+                                                "ratedcurentvalue": 700,
+                                                "accuracy": "    ",
+                                                "length": "     "
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "-5",
+                        "name": "零线",
+                        "uuid": "891a240b-156a-4965-bf10-457fa72e3382",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "branch",
+                        "type": "TMY",
+                        "attribute": "",
+                        "desc": "40*4",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 0,
+                        "accuracy": "    ",
+                        "length": "     "
+                      }
+                    ],
+                    "next": [
+                      {
+                        "number": "",
+                        "bid": "HCDYKX20215313326",
+                        "cabinetnumber": "#2-2",
+                        "alias": "#2-2低压馈线柜",
+                        "name": "低压馈线柜",
+                        "creat_time": "",
+                        "model": "9",
+                        "direction": "",
+                        "material": [
+                          {
+                            "id": "-3",
+                            "name": "低压母线",
+                            "uuid": "51f27639-1ece-4a0c-95fd-21f0a57466ef",
+                            "position": 1,
+                            "specification": "40*4        ",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "xx",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 510,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "c12120d8-ad2d-4f66-9dd7-448cc214cd46",
+                                "position": 1,
+                                "specification": "20*3        ",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "xx",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 220,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "40",
+                                    "name": "断路器手车式",
+                                    "uuid": "a15b5020-c712-4dc2-8326-e2fb3b984be8",
+                                    "position": 1,
+                                    "specification": "250L        ",
+                                    "linkType": "master",
+                                    "type": "GSM3        ",
+                                    "attribute": "xx",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 16,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "attach": [
+                                      {
+                                        "id": "20",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "7475c31d-a20b-45bc-bed0-cc59408cad5d",
+                                        "position": 1,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "21",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "50a23564-e14c-4ef8-8756-2bd5dca6e7e9",
+                                        "position": 2,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "22",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "c40aba3a-991a-4cd3-905b-11b5ce9acd88",
+                                        "position": 3,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      }
+                                    ],
+                                    "material": [
+                                      {
+                                        "id": "5",
+                                        "name": "低压出线电缆",
+                                        "uuid": "a2a86445-3711-4bea-9027-9845d43dbf7d",
+                                        "position": 1,
+                                        "specification": "1",
+                                        "linkType": "master",
+                                        "type": "YJV-0.6/1   ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "30m  "
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "-3",
+                            "name": "低压母线",
+                            "uuid": "30cc9c94-0b1b-48e2-b864-13ada3e85fbf",
+                            "position": 1,
+                            "specification": "40*4        ",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "xx",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 510,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "0c17a2ef-71e6-4b26-b864-84c26021de6e",
+                                "position": 1,
+                                "specification": "20*3        ",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "xx",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 220,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "40",
+                                    "name": "断路器手车式",
+                                    "uuid": "a2c1187a-ca1d-4ff5-abe7-ec3db3f32bba",
+                                    "position": 1,
+                                    "specification": "250L        ",
+                                    "linkType": "master",
+                                    "type": "GSM3        ",
+                                    "attribute": "xx",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 10,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "attach": [
+                                      {
+                                        "id": "20",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "2581e355-bebc-4928-810f-af092b16e8a7",
+                                        "position": 1,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "21",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "ee8a7b0b-7094-46d8-ba16-4ee48816f681",
+                                        "position": 2,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "22",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "f5ba8ff7-67c1-4653-8bb8-14fe49b5613d",
+                                        "position": 3,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      }
+                                    ],
+                                    "material": [
+                                      {
+                                        "id": "5",
+                                        "name": "低压出线电缆",
+                                        "uuid": "957c7b45-3e31-4cff-b2cf-751ae03be3c1",
+                                        "position": 1,
+                                        "specification": "2",
+                                        "linkType": "master",
+                                        "type": "YJV-0.6/1   ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "30m  "
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "-3",
+                            "name": "低压母线",
+                            "uuid": "111b3267-f131-4e1e-9f46-f925eaa92188",
+                            "position": 1,
+                            "specification": "40*4        ",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "xx",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 510,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "a9fefe34-a3dd-41b8-95c5-3c157da17a51",
+                                "position": 1,
+                                "specification": "20*3        ",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "xx",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 220,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "40",
+                                    "name": "断路器手车式",
+                                    "uuid": "e7508ba7-e205-4b99-b77a-bea93c1baf75",
+                                    "position": 1,
+                                    "specification": "250L        ",
+                                    "linkType": "master",
+                                    "type": "GSM3        ",
+                                    "attribute": "xx",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 12,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "attach": [
+                                      {
+                                        "id": "20",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "cbf3af8e-afb1-4833-a82c-0458afb3a8fb",
+                                        "position": 1,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "21",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "b6deaaca-63d2-4ab6-8df4-80fe160776ad",
+                                        "position": 2,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "22",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "ed88ecaf-77c4-4c36-9275-f6661bb18e0f",
+                                        "position": 3,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      }
+                                    ],
+                                    "material": [
+                                      {
+                                        "id": "5",
+                                        "name": "低压出线电缆",
+                                        "uuid": "fed8a4a9-a80c-4014-920d-73d1193bd6f9",
+                                        "position": 1,
+                                        "specification": "3",
+                                        "linkType": "master",
+                                        "type": "YJV-0.6/1   ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "30m  "
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "-3",
+                            "name": "低压母线",
+                            "uuid": "0280f029-1f14-499b-8493-3c2630053e75",
+                            "position": 1,
+                            "specification": "40*4        ",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "xx",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 510,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "ce92fbcf-4a38-41d8-883c-5bccd84ad1f7",
+                                "position": 1,
+                                "specification": "20*3        ",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "xx",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 220,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "40",
+                                    "name": "断路器手车式",
+                                    "uuid": "e418444e-0a72-411a-9eb6-bf77fdc279da",
+                                    "position": 1,
+                                    "specification": "250L        ",
+                                    "linkType": "master",
+                                    "type": "GSM3        ",
+                                    "attribute": "xx",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 200,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "attach": [
+                                      {
+                                        "id": "20",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "01732a6e-38e0-4bd2-9018-d452cfdce74a",
+                                        "position": 1,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "21",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "a4c8c3bd-ef93-40cc-a158-582e25a1b40a",
+                                        "position": 2,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "22",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "7ea6803a-8581-4ef9-aee8-35f2085711bc",
+                                        "position": 3,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      }
+                                    ],
+                                    "material": [
+                                      {
+                                        "id": "5",
+                                        "name": "低压出线电缆",
+                                        "uuid": "9c84be99-df1e-47eb-ad09-7f8ed51ce4c5",
+                                        "position": 1,
+                                        "specification": "4",
+                                        "linkType": "master",
+                                        "type": "YJV-0.6/1   ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "30m  "
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "-3",
+                            "name": "低压母线",
+                            "uuid": "3f52f580-c431-4544-810c-0555adcc2b4b",
+                            "position": 1,
+                            "specification": "40*4        ",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "xx",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 510,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "fbeb966f-aa2d-48ed-9b1e-77dabf0f7a0d",
+                                "position": 1,
+                                "specification": "20*3        ",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "xx",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 220,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "40",
+                                    "name": "断路器手车式",
+                                    "uuid": "7422bdd4-7f39-4e9d-9589-968d81fda33a",
+                                    "position": 1,
+                                    "specification": "250L        ",
+                                    "linkType": "master",
+                                    "type": "GSM3        ",
+                                    "attribute": "xx",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 16,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "attach": [
+                                      {
+                                        "id": "20",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "460c4652-b99f-43b5-9765-5d67e29612be",
+                                        "position": 1,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "21",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "fad6ce67-85ff-4693-a75b-ee8cdf4da813",
+                                        "position": 2,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "22",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "d949ef16-bc42-480f-8dce-2ead1b80f5ec",
+                                        "position": 3,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      }
+                                    ],
+                                    "material": [
+                                      {
+                                        "id": "5",
+                                        "name": "低压出线电缆",
+                                        "uuid": "43c3578c-3208-44a5-9c61-194ee0b05299",
+                                        "position": 1,
+                                        "specification": "5",
+                                        "linkType": "master",
+                                        "type": "YJV-0.6/1   ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "30m  "
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "-3",
+                            "name": "低压母线",
+                            "uuid": "11b4aaf7-a9e2-4de8-9025-9f76c88b72e1",
+                            "position": 1,
+                            "specification": "40*4        ",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "xx",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 510,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "18a8d21f-8b3d-4934-87e9-0626f6b39d95",
+                                "position": 1,
+                                "specification": "20*3        ",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "xx",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 220,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "material": [
+                                  {
+                                    "id": "40",
+                                    "name": "断路器手车式",
+                                    "uuid": "0d313a74-4131-4474-9bd6-ba880f327b74",
+                                    "position": 1,
+                                    "specification": "250L        ",
+                                    "linkType": "master",
+                                    "type": "GSM3        ",
+                                    "attribute": "xx",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 200,
+                                    "accuracy": "    ",
+                                    "length": "     ",
+                                    "attach": [
+                                      {
+                                        "id": "20",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "38e824e8-d96d-42fa-b8c9-c38fc9477da2",
+                                        "position": 1,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "21",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "6170b3cb-398a-4aba-8226-fcffeedecfe7",
+                                        "position": 2,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      },
+                                      {
+                                        "id": "22",
+                                        "name": "CT穿芯单绕",
+                                        "uuid": "c271f468-084f-48d1-b3a7-2804321094d9",
+                                        "position": 3,
+                                        "specification": "100/5       ",
+                                        "linkType": "branch",
+                                        "type": "BH-0.66     ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 100,
+                                        "accuracy": "0.2S",
+                                        "length": "     "
+                                      }
+                                    ],
+                                    "material": [
+                                      {
+                                        "id": "5",
+                                        "name": "低压出线电缆",
+                                        "uuid": "bfb85776-beae-4ae1-b300-87ac00fdde4c",
+                                        "position": 1,
+                                        "specification": "6",
+                                        "linkType": "master",
+                                        "type": "YJV-0.6/1   ",
+                                        "attribute": "xx",
+                                        "desc": "",
+                                        "withstandcurrent": "",
+                                        "ratedcurentvalue": 0,
+                                        "accuracy": "    ",
+                                        "length": "30m  "
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "number": "",
+                        "bid": "RVCX1906171641151E",
+                        "cabinetnumber": "#2-3",
+                        "alias": "#2-3电容柜",
+                        "name": "电容柜",
+                        "creat_time": "",
+                        "model": "8",
+                        "direction": "right",
+                        "material": [
+                          {
+                            "id": "-2",
+                            "name": "低压母线",
+                            "uuid": "d6979753-22b6-4357-a0a0-2b20b186fc92",
+                            "position": 1,
+                            "specification": "xx",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 0,
+                            "accuracy": "",
+                            "length": "",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "a53740f4-d54c-459b-9268-ccd0fc0c7f25",
+                                "position": 1,
+                                "specification": "xx",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 0,
+                                "accuracy": "",
+                                "length": "",
+                                "material": [
+                                  {
+                                    "id": "57",
+                                    "name": "电容柜组件",
+                                    "uuid": "06e582ab-4429-4dff-930f-9a19e2aec11c",
+                                    "position": 1,
+                                    "specification": "xx",
+                                    "linkType": "master",
+                                    "type": "TMY         ",
+                                    "attribute": "",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "",
+                                    "length": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "number": "",
+                        "bid": "RVCX1906171641152E",
+                        "cabinetnumber": "#2-4",
+                        "alias": "#2-4电容柜",
+                        "name": "电容柜",
+                        "creat_time": "",
+                        "model": "8",
+                        "direction": "right",
+                        "material": [
+                          {
+                            "id": "-2",
+                            "name": "低压母线",
+                            "uuid": "22c90a21-f8cb-4840-a7da-9c0afec3d879",
+                            "position": 1,
+                            "specification": "xx",
+                            "linkType": "master",
+                            "type": "TMY         ",
+                            "attribute": "",
+                            "desc": "",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 0,
+                            "accuracy": "",
+                            "length": "",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "926ca8d5-dbe2-4afe-9b28-8b9a827bd2dc",
+                                "position": 1,
+                                "specification": "xx",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "",
+                                "desc": "",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 0,
+                                "accuracy": "",
+                                "length": "",
+                                "material": [
+                                  {
+                                    "id": "57",
+                                    "name": "电容柜组件",
+                                    "uuid": "6e80eb70-d5db-4d7d-b19c-dc2ab63fd7d3",
+                                    "position": 1,
+                                    "specification": "xx",
+                                    "linkType": "master",
+                                    "type": "TMY         ",
+                                    "attribute": "",
+                                    "desc": "",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 0,
+                                    "accuracy": "",
+                                    "length": ""
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Abnormal": [
+    {
+      "PreBid": "",
+      "PreUuid": "a9a6483c-d88e-44b1-bb77-0bacc599440c",
+      "PreFbn": "2069#1-3",
+      "PreModel": "8",
+      "Contex_box": {
+        "number": "",
+        "bid": "DYMP2005261405320X",
+        "cabinetnumber": "#1-4",
+        "alias": "#1-4联络柜",
+        "name": "联络柜",
+        "creat_time": "",
+        "model": "12",
+        "direction": "left",
+        "material": [
+          {
+            "id": "-3",
+            "name": "低压母线",
+            "uuid": "34504c3a-8db2-4fef-ae05-1a1467c7cae7",
+            "position": 1,
+            "specification": "",
+            "linkType": "master",
+            "type": "TMY",
+            "attribute": "",
+            "desc": "50*5",
+            "withstandcurrent": "",
+            "ratedcurentvalue": 0,
+            "accuracy": "    ",
+            "length": "     ",
+            "material": [
+              {
+                "id": "8",
+                "name": "低压母线",
+                "uuid": "80951f30-844a-4cdb-a80d-bdef0d103e30",
+                "position": 1,
+                "specification": "",
+                "linkType": "master",
+                "type": "TMY         ",
+                "attribute": "",
+                "desc": "50*5        ",
+                "withstandcurrent": "",
+                "ratedcurentvalue": 700,
+                "accuracy": "    ",
+                "length": "     ",
+                "material": [
+                  {
+                    "id": "47",
+                    "name": "开启式刀闸",
+                    "uuid": "0c988660-1a67-492c-b53d-1d29dea34ce5",
+                    "position": 1,
+                    "specification": "",
+                    "linkType": "master",
+                    "type": "HD13BX      ",
+                    "attribute": "",
+                    "desc": "600/41      ",
+                    "withstandcurrent": "",
+                    "ratedcurentvalue": 600,
+                    "accuracy": "    ",
+                    "length": "     ",
+                    "material": [
+                      {
+                        "id": "8",
+                        "name": "低压母线",
+                        "uuid": "027704cb-fa52-4383-8424-be4a579bea35",
+                        "position": 1,
+                        "specification": "",
+                        "linkType": "master",
+                        "type": "TMY         ",
+                        "attribute": "",
+                        "desc": "50*5        ",
+                        "withstandcurrent": "",
+                        "ratedcurentvalue": 700,
+                        "accuracy": "    ",
+                        "length": "     ",
+                        "material": [
+                          {
+                            "id": "41",
+                            "name": "断路器固定式",
+                            "uuid": "4ced4582-5a09-4129-9ce5-dda10de26958",
+                            "position": 1,
+                            "specification": "",
+                            "linkType": "master",
+                            "type": "GSW3        ",
+                            "attribute": "",
+                            "desc": "2000/3      ",
+                            "withstandcurrent": "",
+                            "ratedcurentvalue": 630,
+                            "accuracy": "    ",
+                            "length": "     ",
+                            "material": [
+                              {
+                                "id": "8",
+                                "name": "低压母线",
+                                "uuid": "daa273d9-6314-45a9-a9f9-6a1db6d295e7",
+                                "position": 1,
+                                "specification": "",
+                                "linkType": "master",
+                                "type": "TMY         ",
+                                "attribute": "",
+                                "desc": "50*5        ",
+                                "withstandcurrent": "",
+                                "ratedcurentvalue": 700,
+                                "accuracy": "    ",
+                                "length": "     ",
+                                "attach": [
+                                  {
+                                    "id": "20",
+                                    "name": "CT穿芯单绕",
+                                    "uuid": "d4b2354a-d821-4602-84ef-f18c8e7673f7",
+                                    "position": 1,
+                                    "specification": "CT",
+                                    "linkType": "false",
+                                    "type": "BH-0.66     ",
+                                    "attribute": "",
+                                    "desc": "200/5       ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 200,
+                                    "accuracy": "0.2S",
+                                    "length": "     "
+                                  },
+                                  {
+                                    "id": "21",
+                                    "name": "CT穿芯单绕",
+                                    "uuid": "1a049104-23d1-46e4-9792-253a468972b4",
+                                    "position": 2,
+                                    "specification": "CT",
+                                    "linkType": "false",
+                                    "type": "BH-0.66     ",
+                                    "attribute": "",
+                                    "desc": "200/5       ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 200,
+                                    "accuracy": "0.2S",
+                                    "length": "     "
+                                  },
+                                  {
+                                    "id": "22",
+                                    "name": "CT穿芯单绕",
+                                    "uuid": "49f03c6b-9e98-4577-980c-a06e2a8f5d51",
+                                    "position": 3,
+                                    "specification": "CT",
+                                    "linkType": "false",
+                                    "type": "BH-0.66     ",
+                                    "attribute": "",
+                                    "desc": "200/5       ",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 200,
+                                    "accuracy": "0.2S",
+                                    "length": "     "
+                                  }
+                                ],
+                                "material": [
+                                  {
+                                    "id": "8",
+                                    "name": "低压母线",
+                                    "uuid": "cc2b6de2-3094-417a-8ff0-876811a5032d",
+                                    "position": 1,
+                                    "specification": "",
+                                    "linkType": "master",
+                                    "type": "TMY         ",
+                                    "attribute": "",
+                                    "desc": "50*5",
+                                    "withstandcurrent": "",
+                                    "ratedcurentvalue": 700,
+                                    "accuracy": "    ",
+                                    "length": "     "
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "NextUuid": "22c90a21-f8cb-4840-a7da-9c0afec3d879",
+      "NextBid": "",
+      "NextFbn": "2069#2-4",
+      "NextModel": "8"
+    }
+  ]
+}

@@ -15,9 +15,8 @@ export const BASE_SIZE = canvasMap.MAP_WIDTH / 200;
 // 绘图起始点
 export const beginningPoint = {
   X: canvasMap.MAP_PADDING,
-  Y: canvasMap.MAP_HEIGHT - 4*BASE_SIZE
+  Y: canvasMap.MAP_HEIGHT/4 - 2*BASE_SIZE
 }
-
 
 
 //图形大小基准值

@@ -1,5 +1,5 @@
 
-import { IhighVmainline } from '@/typings/main_Interface';
+import { IhighVmainline } from '@/typings/shape_main_Interface';
 import { line_width,line_length } from '@/config/shape&layout';
 
 const a = line_width();

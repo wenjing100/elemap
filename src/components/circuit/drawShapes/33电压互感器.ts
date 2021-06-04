@@ -1,5 +1,5 @@
 
-import { ImainBase } from "@/typings/main_Interface"
+import { ImainBase } from "@/typings/shape_main_Interface"
 import { line_length, shap_scale, line_width } from '@/config/shape&layout';
 import { bd } from '@/utils/utils_drawShap';
 
