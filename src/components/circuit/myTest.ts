@@ -26,8 +26,8 @@ function TestShap(pload:ITS){
   this.y1 = this.D == 'u'?this.y-2*this.r-this.shortLine:this.y+2*this.r+this.shortLine;
   this.y2 = this.D == 'u'?this.y-2*this.r-2*this.shortLine:this.y+2*this.r+2*this.shortLine;
   this.nextPoint = {
-    x:this.x,
-    y:this.y2
+    x:Math.floor(this.x),
+    y:Math.floor(this.y2)
   }
 }
 

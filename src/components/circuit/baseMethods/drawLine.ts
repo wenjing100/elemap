@@ -29,7 +29,7 @@ function drawLineTypeOne(loadone:ILineTypeOne) {
     loadone.ctx.setLineDash([2,2]);
   }
   if(loadone.lineCap || loadone.lineCap == 'round'){
-    loadone.ctx.lineCap = 'round';
+    loadone.ctx.lineJoin = 'round';
   }
   if(loadone.color){
     loadone.ctx.strokeStyle = loadone.color;
@@ -41,7 +41,7 @@ function drawLineTypeOne(loadone:ILineTypeOne) {
   loadone.ctx.lineTo(x1,y1);
   loadone.ctx.stroke();
   //返回终点坐标
-  return {x:x1,y:y1}
+  return {x:Math.floor(x1),y:Math.floor(y1)}
 }
 
 

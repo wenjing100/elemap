@@ -13,15 +13,15 @@ import { BianYaNigh }  from './变压器/19_三绕组YDY_变压器';
 
 
 export {
-  EleEnter,
-  HighV_mainLine,
-  EleDianYaHuGan,
-  BianYaOne,
-  BianYaTwo,
-  BianYaThree,
-  BianYaFour,
-  BianYaSix,
-  BianYaSeven,
-  BianYaEight,
-  BianYaNigh
+  EleEnter,//电源接入点
+  HighV_mainLine,//高压母线
+  EleDianYaHuGan,//
+  BianYaOne,//
+  BianYaTwo,//
+  BianYaThree,//
+  BianYaFour,//
+  BianYaSix,//
+  BianYaSeven,//
+  BianYaEight,//
+  BianYaNigh,//
 }

@@ -1,138 +1,146 @@
 
 import { TestShap } from './myTest';//测试用的模拟图形
-import { EleEnter } from '../circuit/drawShapes/1电源接入点';
+import { EleEnter, HighV_mainLine } from '../circuit/drawShapes';
 import { drawLineTypeOne } from './baseMethods/drawLine';
 import { beginningPoint } from '@/config/shape&layout';
 import { IdrawData, Imaterial, INormal } from '@/typings/data_interface';
-import { line_length} from '@/config/shape&layout';
+import { line_length,statusColor } from '@/config/shape&layout';
 
 
-interface Ip{
-  x:number,
-  y:number
+interface Ip {
+  x: number,
+  y: number
 }
-function drawCircuitOne(data:IdrawData,ctx:CanvasRenderingContext2D){
+function drawCircuitOne(data: IdrawData, ctx: CanvasRenderingContext2D) {
+  console.log(data);
+  const normal = data.Normal;
+  // const abnormal = data.Abnormal;
+  const beginDirection = 'd';//起始方向
+  let point = { x: beginningPoint.X, y: beginningPoint.Y };//Eenter.nextPoint;
+  const Eenter = new EleEnter({
+    x: point.x,
+    y: point.y,
+    ctx,
+    color: easyColor(),
+    direction: beginDirection
+  });
+  point = Eenter.nextPoint;
+  Eenter.draw();
+  //绘制normal
+  drawNormal(normal, ctx, point, beginDirection);
 
-  // let nexts = [];//next维护数组
-  const normal = data.Normal.material;
-  const DD = 'd';//起始柜子原件向下排列
-  const nextDirection = data.Normal.direction == 'left'?'right':'left';
-  let point = {x:beginningPoint.X,y:beginningPoint.Y};//Eenter.nextPoint;
-  let Npoint :Ip;
+  //绘制abnormal
 
-
-  //先遍历 柜子内部----得到下一个柜子入口坐标
-  normal.forEach(item=>{
-    const Eenter = new EleEnter({
-      x:point.x,
-      y:point.y,
-      ctx,
-      color:easyColor()
-    });
-    point = Eenter.nextPoint;
-    Eenter.draw();
-    const p = getInList(item.material,point,ctx,DD);
-    Npoint = p;
+}
+//draw----Normal
+function drawNormal(normalData: INormal, ctx: CanvasRenderingContext2D, point: Ip, nextDirection: string) {
+  let _point: Ip = null;
+  const normal = normalData.material;
+  const next = normalData.next;
+  const cabinetPosition = normalData.direction == 'left' ? 'r' : 'l';
+  normal.forEach(item => {
+    _point = getInList(item.material, point, ctx, nextDirection)
   });
   //遍历 next
-  if(data.Normal.next){
-    console.log(data.Normal.next)
-    goToNext(data.Normal.next,Npoint,nextDirection,ctx);
-  }
-
-}
-//next
-function goToNext (nextList:Array<INormal>,point:Ip,goDirection:string,ctx:CanvasRenderingContext2D) {
-  const myPoint = point;
-  let p;
-  //画一条连接两个柜子的线
-  p = drawLineTypeOne({
-    x:myPoint.x,
-    y:myPoint.y,
-    len:line_length.line_between_cabinet,
-    lineD:goDirection == 'left'? 'l':'r',
-    color: easyColor(),
-    lineCap:'round',
-    ctx,
-  });
-  //调用单个柜子
-  nextList.forEach(normal=>{
-
-    const DD = normal.direction;
-    normal.material.forEach(item=>{
-      const nnpp = getInList(item.material,p,ctx,DD);
-      p = nnpp;
+  if (next) {
+    nextDirection = nextDirection == 'd' ? 'u' : 'd';
+    //每个柜子间需要一条水平线
+    _point = drawLineTypeOne({
+      x: _point.x,
+      y: _point.y,
+      ctx,
+      lineD: cabinetPosition,
+      len: line_length.line_between_cabinet
+    })
+    next.forEach(n => {
+      _point = drawNormal(n, ctx, _point, nextDirection);
     })
 
-    // if(normal.next){
-    //   for(let i = 0; i< normal.next.length; i++){
-    //     const p2 = goToNext(normal.next,p,normal.next[i].direction,ctx);
-    //     p = p2;
-    //   }
-    // }
-  })
-  return p
+  }
+  return _point;
 }
+
 //单个柜子
-function getInList(list:Array<Imaterial>,point:Ip,ctx:CanvasRenderingContext2D,showDirection:string){
-  let INpoint;
-  for(let i = 0; i < list.length; i++ ){
+function getInList(list: Array<Imaterial>, point: Ip, ctx: CanvasRenderingContext2D, showDirection: string) {
+  let INpoint: Ip = null;
+  const len = list && list.length;
+  for (let i = 0; i < len; i++) {
     //画线时候的方向和 线长
     let lineDirection = showDirection;
     let lineL = line_length.line_extra_short;
     INpoint = point;
 
-    if(list[i].position == 2){//左边
+    if (list[i].position == 2) {//左边
       lineDirection = 'l';
       lineL = line_length.line_between_cells;
-    }else if(list[i].position == 3){//右边
+    } else if (list[i].position == 3) {//右边
       lineDirection = 'r';
       lineL = line_length.line_between_cells;
     }
-    if(parseInt(list[i].id) < 12){
-      const pp = drawLineTypeOne({
-        x:INpoint.x,
-        y:INpoint.y,
-        len:lineL,
-        lineD:lineDirection,
-        color: easyColor(),
-        lineCap:'round',
+
+    if (parseInt(list[i].id) < 12) {
+      if (list[i].attach) {
+        const x1 = INpoint.x;
+        const y1 = INpoint.y;
+        for (let k = 0; k < list[i].attach.length; k++) {
+          const linePoint = {
+            x:x1,
+            y:y1
+          }
+          switch (list[i].attach[k].position) {
+            case 2:
+              linePoint.x = linePoint.x - line_length.line_between_attach;
+              break;
+            case 3:
+              linePoint.x = linePoint.x + line_length.line_between_attach;
+              break;
+            default:
+              break;
+          }
+          //绘制attach
+          const shap = new TestShap({
+            x: linePoint.x,
+            y: linePoint.y,
+            ctx,
+            color: '#1dc8fc',
+            D: showDirection
+          });
+          shap.draw();
+          if (list[i].attach[k].position == 1) {
+            INpoint = shap.nextPoint;
+          }
+        }
+      }
+      const line = new HighV_mainLine({
+        x: INpoint.x,
+        y: INpoint.y,
+        direction: lineDirection,
+        color: statusColor.normal,
         ctx,
       });
-      INpoint = pp;
-    }else{
-      //判断下什么形状的 画的有问题------完成后删除
-      let coo = 'red';
-      if(parseInt(list[i].id) == 50){
-        coo = 'green';
-      }
-      if(parseInt(list[i].id) == 56){
-        coo = 'black';
-      }
-      if(parseInt(list[i].id) == 42){
-        coo = 'blue';
-      }
+      INpoint = line.nextPoint;
+    } else {
       const shap = new TestShap({
-        x:INpoint.x,
-        y:INpoint.y,
+        x: INpoint.x,
+        y: INpoint.y,
         ctx,
-        color:coo,
-        D:showDirection
+        // color: coo,
+        D: showDirection
       });
       shap.draw();
       INpoint = shap.nextPoint;
     }
-    if(list[i].material){
-      INpoint = getInList(list[i].material,INpoint,ctx,showDirection);
+    if (list[i].material) {
+      INpoint = getInList(list[i].material, INpoint, ctx, showDirection);
     }
   }
   return INpoint
 }
 
 //随机 简单颜色
-function easyColor () {
-  const arr = ['pink','red','blue','black','green','tomato','purple','yellow'];
-  arr.sort(()=>Math.random() - 0.5);
+function easyColor() {
+  const arr = ['pink', 'red', 'blue', 'black', 'green', 'tomato', 'purple', 'yellow'];
+  arr.sort(() => Math.random() - 0.5);
   return arr[0];
 }
 

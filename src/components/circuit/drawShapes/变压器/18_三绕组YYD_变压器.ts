@@ -2,14 +2,14 @@
 import { drawSparkThree, drawTriangle } from '../../baseMethods/baseShapes';
 import { drawLineTypeOne } from '../../baseMethods/drawLine';
 import { shap_scale,line_length,line_width } from '@/config/shape&layout';
-import { IbianYaDouble } from '@/typings/shape_main_Interface';
+import { ImainBase } from '@/typings/shape_main_Interface';
 import { bd } from '@/utils/utils_drawShap';
 
 const a = line_width();
 
 //从上定点开始绘制  不接地
 //两个出口 nextPointA nextPointB 
-function BianYaEight(pload:IbianYaDouble):void {
+function BianYaEight(pload:ImainBase):void {
   this.x = pload.x;
   this.y = pload.y;
   this.color = pload.color;

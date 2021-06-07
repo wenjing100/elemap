@@ -34,7 +34,7 @@ export default defineComponent({
     nextTick(async () => {
       state.testData = (await getStructure()).data;
 
-      console.log(state.testData)
+      // console.log(state.testData)
 
       let ctx = mycanvas.value.getContext("2d");
       mycanvas.value.width = canvasMap.MAP_WIDTH;
@@ -53,6 +53,6 @@ export default defineComponent({
 <style lang='scss' scoped>
 #mycanvas {
   box-shadow: 0 0 10px gray;
-  /* color:#fff; */
+  /* color:#1dc8fc; */
 }
 </style>

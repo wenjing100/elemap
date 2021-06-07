@@ -2,14 +2,14 @@
 import { drawSparkThree, drawTriangle, drawLineGround } from '../../baseMethods/baseShapes';
 import { drawLineTypeOne } from '../../baseMethods/drawLine';
 import { shap_scale,line_length,line_width } from '@/config/shape&layout';
-import { IbianYaDouble } from '@/typings/shape_main_Interface';
+import { ImainBase } from '@/typings/shape_main_Interface';
 import { bd } from '@/utils/utils_drawShap';
 
 const a = line_width();
 
 //从上定点开始绘制
 //两个出口 nextPointA nextPointB nextPointSide
-function BianYaNigh(pload:IbianYaDouble):void {
+function BianYaNigh(pload:ImainBase):void {
   this.x = pload.x;
   this.y = pload.y;
   this.color = pload.color;

@@ -1,14 +1,14 @@
 
-import { IhighVmainline } from '@/typings/shape_main_Interface';
+import { ImainBase } from '@/typings/shape_main_Interface';
 import { line_width,line_length } from '@/config/shape&layout';
 
 const a = line_width();
 //出口 nextPoint
-function HighV_mainLine(pload:IhighVmainline) {
+function HighV_mainLine(pload:ImainBase) {
   this.x = pload.x;
   this.y = pload.y;
   this.color = pload.color;
-  this.direction = pload.direction;
+  this.direction = pload.direction || 'd';
   this.lineWidth = a.normal;
   this.ctx = pload.ctx;
   this.lineLen = line_length.line_self;
@@ -42,6 +42,8 @@ HighV_mainLine.prototype.draw = function (){
   this.ctx.strokeStyle = this.color;
   this.ctx.moveTo(this.x,this.y);
   this.ctx.lineTo(this.nextPoint.x,this.nextPoint.y);
+  //连接处的圆点
+  this.ctx.arc(this.nextPoint.x,this.nextPoint.y,this.lineWidth*2,0,Math.PI*2);
   this.ctx.stroke();
 }
 
