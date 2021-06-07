@@ -6,17 +6,15 @@
 import {
   defineComponent,
   nextTick,
-  onMounted,
-  onRenderTriggered,
   reactive,
   ref,
   toRefs,
-  watch,
 } from "vue";
 import { canvasMap } from "../../config/shape&layout";
-import { drawCircuitOne } from "./draw";
-import { getStructure } from "@/netWork/structureNet";
+// import { drawCircuitOne } from "./draw";
+// import { getStructure } from "@/netWork/structureNet";
 import { IdrawData } from "@/typings/data_interface";
+import { doubleDianliuHuGan } from '@/components/circuit/drawShapes';
 
 export default defineComponent({
   name: "circuit",
@@ -32,14 +30,22 @@ export default defineComponent({
 
     //在nextTick中初始化+请求数据，此时画布canvas已经渲染
     nextTick(async () => {
-      state.testData = (await getStructure()).data;
+      //请求结构数据
+      // state.testData = (await getStructure()).data;
 
       // console.log(state.testData)
 
       let ctx = mycanvas.value.getContext("2d");
       mycanvas.value.width = canvasMap.MAP_WIDTH;
       mycanvas.value.height = canvasMap.MAP_HEIGHT;
-      drawCircuitOne(state.testData, ctx);
+      let ball = new doubleDianliuHuGan({
+        x:X,
+        y:Y,
+        color:COLOR,
+        ctx,
+        direction:'d'
+      });
+      ball.draw();
     });
 
     return {

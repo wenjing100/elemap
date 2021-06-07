@@ -118,6 +118,7 @@ function getInList(list: Array<Imaterial>, point: Ip, ctx: CanvasRenderingContex
         color: statusColor.normal,
         ctx,
       });
+      line.draw();
       INpoint = line.nextPoint;
     } else {
       const shap = new TestShap({

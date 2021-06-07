@@ -57,7 +57,7 @@ export const line_length = {
   line_between_cells: 4*BASE_SIZE,//不同元件间
   line_between_norm_abnorm: 8*BASE_SIZE,//normal和abnormal间距离
   line_extra_exShort:BASE_SIZE,//元件外接---超短
-  line_extra_short: 2*BASE_SIZE,//元件外接线---短
+  line_extra_short: 1.5*BASE_SIZE,//元件外接线---短
   line_extra_long: BASE_SIZE*5, //元件外接线---长
   line_between_attach: 3*BASE_SIZE,//attach间距
 }

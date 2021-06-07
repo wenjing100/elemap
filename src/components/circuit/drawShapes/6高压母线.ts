@@ -9,7 +9,7 @@ function HighV_mainLine(pload:ImainBase) {
   this.y = pload.y;
   this.color = pload.color;
   this.direction = pload.direction || 'd';
-  this.lineWidth = a.normal;
+  this.lineWidth = a.light;
   this.ctx = pload.ctx;
   this.lineLen = line_length.line_self;
 
@@ -43,7 +43,7 @@ HighV_mainLine.prototype.draw = function (){
   this.ctx.moveTo(this.x,this.y);
   this.ctx.lineTo(this.nextPoint.x,this.nextPoint.y);
   //连接处的圆点
-  this.ctx.arc(this.nextPoint.x,this.nextPoint.y,this.lineWidth*2,0,Math.PI*2);
+  this.ctx.arc(this.nextPoint.x,this.nextPoint.y,this.lineWidth,0,Math.PI*2);
   this.ctx.stroke();
 }
 

@@ -28,9 +28,7 @@ function drawLineTypeOne(loadone:ILineTypeOne) {
   if(loadone.lineStyle || loadone.lineStyle == 'dashed'){
     loadone.ctx.setLineDash([2,2]);
   }
-  if(loadone.lineCap || loadone.lineCap == 'round'){
-    loadone.ctx.lineJoin = 'round';
-  }
+
   if(loadone.color){
     loadone.ctx.strokeStyle = loadone.color;
   }
@@ -39,6 +37,9 @@ function drawLineTypeOne(loadone:ILineTypeOne) {
   }
   loadone.ctx.moveTo(loadone.x,loadone.y);
   loadone.ctx.lineTo(x1,y1);
+  if(loadone.lineCap || loadone.lineCap == 'round'){
+    loadone.ctx.arc(x1,y1,loadone.lineWidth,0,Math.PI*2);
+  }
   loadone.ctx.stroke();
   //返回终点坐标
   return {x:Math.floor(x1),y:Math.floor(y1)}

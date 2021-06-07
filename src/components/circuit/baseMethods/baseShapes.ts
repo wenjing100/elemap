@@ -88,14 +88,16 @@ function drawDoubleArrowDown(pload:ISparkThree):void{
 //双斜线 电感 起点最左
 function drawDoubleSide(pload:ISparkThree):void{
   pBegin(pload.ctx,pload.color);
-  const l = pload.len*3/2;
-  const x1 = pload.x + 17/24*pload.len;
-  const x2 = pload.x + 17/24*pload.len + pload.len/3;
-  const y1 = pload.y - 3*Math.sqrt(3)/8*pload.len;
+  const a = 1;
+  const l = a*pload.len;
+  const x1 = pload.x + 1/4*l + l/a/3;
+  const x2 = pload.x + l/a*2/3 + l/4;
+  const y1 = pload.y - Math.sqrt(3)/4*l;
   const y2 = y1
 
   lineLeftDown30(pload.ctx,x1,y1,l);
   lineLeftDown30(pload.ctx,x2,y2,l);
+  pload.ctx.beginPath();
   pload.ctx.moveTo(pload.x,pload.y);
   pload.ctx.lineTo(pload.x + pload.len,pload.y);
   pload.ctx.stroke();

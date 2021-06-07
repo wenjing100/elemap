@@ -10,6 +10,8 @@ import { BianYaSix } from './变压器/16_三绕组DDY_变压器';
 import { BianYaSeven }  from './变压器/17_三绕组DYD_变压器';
 import { BianYaEight }  from './变压器/18_三绕组YYD_变压器';
 import { BianYaNigh }  from './变压器/19_三绕组YDY_变压器';
+import { singleDianliuHuGan }  from './电流互感器/20-21-22穿心式单绕电流互感';
+import { doubleDianliuHuGan }  from './电流互感器/23-24-25穿心式双绕电流互感';
 
 
 export {
@@ -24,4 +26,6 @@ export {
   BianYaSeven,//
   BianYaEight,//
   BianYaNigh,//
+  singleDianliuHuGan,//单绕 穿心式电流互感
+  doubleDianliuHuGan,//双绕 穿心式电流互感
 }
