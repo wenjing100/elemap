@@ -22,10 +22,10 @@ export const beginningPoint = {
 
 //图形大小基准值
 export const shap_scale = {
-  small: 0.6*BASE_SIZE,
-  middle: BASE_SIZE,
-  big: 1.5 * BASE_SIZE,
-  large: 2 * BASE_SIZE
+  small: BASE_SIZE,
+  middle: 1.5 * BASE_SIZE,
+  big: 2 * BASE_SIZE,
+  large: 3 * BASE_SIZE
 }
 
 interface IlinewFn{

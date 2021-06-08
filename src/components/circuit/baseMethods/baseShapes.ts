@@ -102,13 +102,39 @@ function drawDoubleSide(pload:ISparkThree):void{
   pload.ctx.lineTo(pload.x + pload.len,pload.y);
   pload.ctx.stroke();
 }
-//斜矩形 长宽比 3：1
+//带中线斜矩形 长宽比 3：1---可以修改---接入点是下顶点
 function drawTiltRect(pload:ItiltRect):void{
+  const rate = 1/3;//比例
+  const w = pload.h*rate;
+  const x0 = pload.h + w;
   pBegin(pload.ctx,pload.color); 
   pload.ctx.save();
-  pload.ctx.rotate(Math.PI*1/6);
-  pload.ctx.strokeRect(pload.x,pload.y,pload.h,pload.h/3);
+  pload.ctx.translate(pload.x,pload.y);
+  pload.ctx.rotate(Math.PI*1/3);
+  pload.ctx.strokeRect(w/2 + x0,-w/2,pload.h,w);
+  pload.ctx.moveTo(x0,0);
+  pload.ctx.lineTo(pload.h+w+x0,0);
+  pload.ctx.stroke();
   pload.ctx.restore();
+}
+//带中线正矩形----接入点为底端
+function drawJustRect(pload:ItiltRect):void{
+  const rate = 1/3;//比例
+  const l = 1/(1+rate)*pload.h;//矩形的高
+  const w = l*rate;
+  //画线
+  drawLineTypeOne({
+    x:pload.x,
+    y:pload.y,
+    color:pload.color,
+    ctx:pload.ctx,
+    lineD:'u',
+    len:pload.h
+  })
+  //矩形
+  pBegin(pload.ctx,pload.color);
+  pload.ctx.strokeRect(pload.x-w/2,pload.y-pload.h+w/2,w,l);
+  
 }
 //接地线
 function drawLineGround(pload:ISparkThree):void{
@@ -149,6 +175,34 @@ function drawFillArrow(pload:IfillArrow):void{
   pload.ctx.lineTo(0,y2);
   pload.ctx.lineTo(x1,y1);
   pload.ctx.fill();
+  pload.ctx.restore();
+}
+//带箭头斜矩形---跌落熔断器中
+function drawFletMelt(pload:ItiltRect){
+  const rate = 1/3;//比例
+  const w = pload.h*rate;
+  const x0 = -pload.h - w;
+  pBegin(pload.ctx,pload.color); 
+  pload.ctx.save();
+  pload.ctx.translate(pload.x,pload.y);
+  pload.ctx.rotate(Math.PI*1/3);
+  pload.ctx.strokeRect(w/2 + x0,-w/2,pload.h,w);
+  pload.ctx.moveTo(x0,0);
+  // pload.ctx.arc(x0,0,6,0,Math.PI*2);
+  pload.ctx.lineTo(0,0);
+  pload.ctx.stroke();
+  pload.ctx.beginPath();
+  pload.ctx.moveTo(x0+(pload.h+w)/2,w/2);
+  pload.ctx.lineTo(x0+(pload.h+w)/2,w);
+  pload.ctx.stroke();
+  drawFillArrow({
+    x:x0+(pload.h+w)/2,
+    y:w,
+    ctx:pload.ctx,
+    color:pload.color,
+    deg:0,
+    len:w/2
+  })
   pload.ctx.restore();
 }
 //双子交叠圆 
@@ -204,5 +258,7 @@ export {
   drawTiltRect,
   drawLineGround,
   drawFillArrow,
+  drawJustRect,
+  drawFletMelt
   // drawDoubleCircle
 }

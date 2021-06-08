@@ -31,16 +31,22 @@ function drawLineTypeOne(loadone:ILineTypeOne) {
 
   if(loadone.color){
     loadone.ctx.strokeStyle = loadone.color;
+    loadone.ctx.fillStyle = loadone.color;
   }
   if(loadone.lineWidth){
     loadone.ctx.lineWidth = loadone.lineWidth;
   }
   loadone.ctx.moveTo(loadone.x,loadone.y);
   loadone.ctx.lineTo(x1,y1);
-  if(loadone.lineCap || loadone.lineCap == 'round'){
-    loadone.ctx.arc(x1,y1,loadone.lineWidth,0,Math.PI*2);
-  }
   loadone.ctx.stroke();
+  if(loadone.lineCap || loadone.lineCap == 'round'){
+    loadone.ctx.beginPath();
+    loadone.ctx.arc(x1,y1,loadone.lineWidth,0,Math.PI*2);
+    loadone.ctx.fill();
+    loadone.ctx.beginPath();
+    loadone.ctx.arc(loadone.x,loadone.y,loadone.lineWidth,0,Math.PI*2);
+    loadone.ctx.fill();
+  }
   //返回终点坐标
   return {x:Math.floor(x1),y:Math.floor(y1)}
 }

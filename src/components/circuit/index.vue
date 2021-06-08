@@ -14,7 +14,9 @@ import { canvasMap } from "../../config/shape&layout";
 // import { drawCircuitOne } from "./draw";
 // import { getStructure } from "@/netWork/structureNet";
 import { IdrawData } from "@/typings/data_interface";
-import { doubleDianliuHuGan } from '@/components/circuit/drawShapes';
+import { fall_melt_switch } from '@/components/circuit/drawShapes';
+import { drawFletMelt } from '@/components/circuit/baseMethods/baseShapes';
+
 
 export default defineComponent({
   name: "circuit",
@@ -38,14 +40,18 @@ export default defineComponent({
       let ctx = mycanvas.value.getContext("2d");
       mycanvas.value.width = canvasMap.MAP_WIDTH;
       mycanvas.value.height = canvasMap.MAP_HEIGHT;
-      let ball = new doubleDianliuHuGan({
+      let ball = new fall_melt_switch({
         x:X,
         y:Y,
         color:COLOR,
         ctx,
-        direction:'d'
+        direction:'d',
+        status:1
       });
       ball.draw();
+
+      // drawCircuitOne(state.testData,ctx);
+
     });
 
     return {

@@ -7,7 +7,10 @@ interface ImainBase{
   ctx: CanvasRenderingContext2D;
   direction?:string;//l 左  r 右 u 上 d 下
 }
-
+//跌落式熔断器
+interface IfallMeltSwitch extends ImainBase{
+  status:number; //0断开  1闭合
+}
 
 //画线接口---第一种  根据起点坐标和长度画线
 interface ILineTypeOne{
@@ -40,4 +43,5 @@ export {
   ImainBase,
   ILineTypeOne,
   ILineTypeTwo,
+  IfallMeltSwitch
 }

@@ -1,16 +1,26 @@
 
 import { TestShap } from './myTest';//测试用的模拟图形
-import { EleEnter, HighV_mainLine } from '../circuit/drawShapes';
+import {//元器件方法
+  EleEnter, 
+  HighV_mainLine, 
+  singleDianliuHuGan,
+  doubleDianliuHuGan,
+  singleDianliu_support,
+  doubleDianliu_support,
+} from '../circuit/drawShapes';
 import { drawLineTypeOne } from './baseMethods/drawLine';
 import { beginningPoint } from '@/config/shape&layout';
 import { IdrawData, Imaterial, INormal } from '@/typings/data_interface';
-import { line_length,statusColor } from '@/config/shape&layout';
+import { line_length, statusColor } from '@/config/shape&layout';
 
 
 interface Ip {
   x: number,
   y: number
 }
+
+const status = statusColor.normal;
+
 function drawCircuitOne(data: IdrawData, ctx: CanvasRenderingContext2D) {
   console.log(data);
   const normal = data.Normal;
@@ -84,9 +94,12 @@ function getInList(list: Array<Imaterial>, point: Ip, ctx: CanvasRenderingContex
         const y1 = INpoint.y;
         for (let k = 0; k < list[i].attach.length; k++) {
           const linePoint = {
-            x:x1,
-            y:y1
+            x: x1,
+            y: y1
           }
+          let shap;
+          const iid = parseInt(list[i].attach[k].id);
+
           switch (list[i].attach[k].position) {
             case 2:
               linePoint.x = linePoint.x - line_length.line_between_attach;
@@ -98,13 +111,22 @@ function getInList(list: Array<Imaterial>, point: Ip, ctx: CanvasRenderingContex
               break;
           }
           //绘制attach
-          const shap = new TestShap({
-            x: linePoint.x,
-            y: linePoint.y,
-            ctx,
-            color: '#1dc8fc',
-            D: showDirection
-          });
+          const _config = {
+              x:linePoint.x,
+              y:linePoint.y,
+              color:status,
+              ctx,
+              direction:showDirection
+            }
+          if(iid >=20 && iid <= 22){
+            shap = new singleDianliuHuGan(_config);
+          }else if( iid > 22 && iid <= 25){
+            shap = new doubleDianliuHuGan(_config);
+          }else if( iid > 25 && iid <= 28){
+            shap = new singleDianliu_support(_config);
+          }else if( iid > 28 && iid <= 31){
+            shap = new doubleDianliu_support(_config);
+          }
           shap.draw();
           if (list[i].attach[k].position == 1) {
             INpoint = shap.nextPoint;
@@ -115,7 +137,7 @@ function getInList(list: Array<Imaterial>, point: Ip, ctx: CanvasRenderingContex
         x: INpoint.x,
         y: INpoint.y,
         direction: lineDirection,
-        color: statusColor.normal,
+        color: status,
         ctx,
       });
       line.draw();
@@ -125,7 +147,6 @@ function getInList(list: Array<Imaterial>, point: Ip, ctx: CanvasRenderingContex
         x: INpoint.x,
         y: INpoint.y,
         ctx,
-        // color: coo,
         D: showDirection
       });
       shap.draw();
